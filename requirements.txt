@@ -1,0 +1,10 @@
+pandas
+numpy
+fhir.resources
+openai
+pydantic
+jupyter
+matplotlib
+seaborn
+python-dotenv
+pytest
