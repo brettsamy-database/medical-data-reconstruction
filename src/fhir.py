@@ -278,7 +278,10 @@ def build_filtered_dataset(raw_dir: Optional[Path] = None, out_dir: Optional[Pat
         rows.append({"patient_id": pid, "file_path": str(out_path), "n_conditions": len(conds), "n_medication_requests": len(meds)})
 
     marker.write_text("ok", encoding="utf-8")
-    return pd.DataFrame(rows, columns=["patient_id", "file_path", "n_conditions", "n_medication_requests"])
+    df = pd.DataFrame(rows, columns=["patient_id", "file_path", "n_conditions", "n_medication_requests"])
+    # Même ordre que index_filtered_dir (relecture du cache) : sinon le tirage avec RANDOM_SEED
+    # donnerait d'autres patients au premier lancement qu'aux suivants.
+    return df.sort_values("patient_id").reset_index(drop=True)
 
 
 # =========================

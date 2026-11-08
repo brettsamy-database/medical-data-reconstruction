@@ -74,7 +74,7 @@ ZIP_PATH = ZIP_DIR / "synthea_fhir_r4.zip"
 # Modèle et échantillon
 # =========================
 MODEL_NAME = "google/medgemma-4b-it"
-N_PATIENTS = 5          # le benchmark publié dans results/ a été fait avec 40 patients
+N_PATIENTS = 40          
 RANDOM_SEED = 155
 
 # =========================
