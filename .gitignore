@@ -11,7 +11,8 @@ __pycache__/
 # Jupyter Notebooks
 .ipynb_checkpoints/
 
-# Fichiers de données lourds (ne pas envoyer sur GitHub)
+# Données lourdes ou régénérables (ne pas envoyer sur GitHub)
+# -> les résultats à publier vont dans results/, qui EST versionné
 data/raw/*
 data/processed/*
 data/gold_standard/*
@@ -25,5 +26,7 @@ config/secrets.json
 
 # Fichiers système / IDE
 .DS_Store
+Thumbs.db
+desktop.ini
 .vscode/
 .idea/

@@ -1,0 +1,67 @@
+{
+  "patient_id": "d1ac7006-362b-cc1d-d516-f11d65055473",
+  "given": "Nita296",
+  "family": "McLaughlin530",
+  "full_name": "Nita296 McLaughlin530",
+  "birthDate": "1932-09-18",
+  "gender": "female",
+  "conditions_candidates": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "162864005",
+      "display": "Body mass index 30+ - obesity (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "19169002",
+      "display": "Miscarriage in first trimester"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "49436004",
+      "display": "Atrial Fibrillation"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "10509002",
+      "display": "Acute bronchitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "444814009",
+      "display": "Viral sinusitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "44465007",
+      "display": "Sprain of ankle"
+    }
+  ],
+  "conditions": [
+    "Body mass index 30+ - obesity (finding)",
+    "Miscarriage in first trimester",
+    "Atrial Fibrillation",
+    "Acute bronchitis (disorder)",
+    "Viral sinusitis (disorder)",
+    "Sprain of ankle"
+  ],
+  "medication_requests": [
+    "120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler",
+    "NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+    "Warfarin Sodium 5 MG Oral Tablet",
+    "Verapamil Hydrochloride 40 MG",
+    "Digoxin 0.125 MG Oral Tablet",
+    "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+    "Acetaminophen 325 MG Oral Tablet"
+  ],
+  "conditions_llm": [
+    "Body mass index 30+ - obesity (finding)",
+    "Miscarriage in first trimester",
+    "Atrial Fibrillation",
+    "Acute bronchitis (disorder)",
+    "Viral sinusitis (disorder)",
+    "Sprain of ankle"
+  ],
+  "note_style": "telegraphic_note",
+  "note_style_label": "Telegraphic note"
+}

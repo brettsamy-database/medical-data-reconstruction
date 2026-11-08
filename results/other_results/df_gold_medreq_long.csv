@@ -1,0 +1,213 @@
+patient_id,rank,medication_request
+01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,0,cetirizine hydrochloride 5 MG Oral Tablet
+01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,1,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector
+01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,2,Hydrocortisone 10 MG/ML Topical Cream
+01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,3,Cefuroxime 250 MG Oral Tablet
+01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,4,Acetaminophen 160 MG Chewable Tablet
+01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,5,Clindamycin 300mg
+03777c32-ed98-50e2-f75d-cbcad532c610,0,Naproxen sodium 220 MG Oral Tablet
+03777c32-ed98-50e2-f75d-cbcad532c610,1,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+03777c32-ed98-50e2-f75d-cbcad532c610,2,Clopidogrel 75 MG Oral Tablet
+03777c32-ed98-50e2-f75d-cbcad532c610,3,Simvastatin 20 MG Oral Tablet
+03777c32-ed98-50e2-f75d-cbcad532c610,4,Amlodipine 5 MG Oral Tablet
+03777c32-ed98-50e2-f75d-cbcad532c610,5,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+03777c32-ed98-50e2-f75d-cbcad532c610,6,Etonogestrel 68 MG Drug Implant
+03777c32-ed98-50e2-f75d-cbcad532c610,7,Mirena 52 MG Intrauterine System
+03777c32-ed98-50e2-f75d-cbcad532c610,8,NuvaRing 0.12/0.015 MG per 24HR 21 Day Vaginal Ring
+03777c32-ed98-50e2-f75d-cbcad532c610,9,Acetaminophen 325 MG Oral Tablet
+0a168e32-7b62-8597-0e11-296871bb764f,0,Acetaminophen 325 MG Oral Tablet
+0a168e32-7b62-8597-0e11-296871bb764f,1,Ibuprofen 200 MG Oral Tablet
+0a168e32-7b62-8597-0e11-296871bb764f,2,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+0a168e32-7b62-8597-0e11-296871bb764f,3,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+0a168e32-7b62-8597-0e11-296871bb764f,4,amLODIPine 2.5 MG Oral Tablet
+122b4063-18dc-f20f-204c-6f2da758717b,0,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+1293efbb-72dc-8b15-3bd6-916f96ed54f4,0,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet
+1293efbb-72dc-8b15-3bd6-916f96ed54f4,1,lisinopril 10 MG Oral Tablet
+1293efbb-72dc-8b15-3bd6-916f96ed54f4,2,amLODIPine 2.5 MG Oral Tablet
+162135b4-931d-a531-c2ad-047b0c24abe8,0,cetirizine hydrochloride 5 MG Oral Tablet
+162135b4-931d-a531-c2ad-047b0c24abe8,1,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector
+162135b4-931d-a531-c2ad-047b0c24abe8,2,120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler
+162135b4-931d-a531-c2ad-047b0c24abe8,3,NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler
+162135b4-931d-a531-c2ad-047b0c24abe8,4,Acetaminophen 160 MG Chewable Tablet
+162135b4-931d-a531-c2ad-047b0c24abe8,5,Clopidogrel 75 MG Oral Tablet
+162135b4-931d-a531-c2ad-047b0c24abe8,6,Simvastatin 20 MG Oral Tablet
+162135b4-931d-a531-c2ad-047b0c24abe8,7,Amlodipine 5 MG Oral Tablet
+162135b4-931d-a531-c2ad-047b0c24abe8,8,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+162135b4-931d-a531-c2ad-047b0c24abe8,9,Jolivette 28 Day Pack
+1ea40a05-c295-8b66-66a2-fda3bc1ed13f,0,ferrous sulfate 325 MG Oral Tablet
+1ea40a05-c295-8b66-66a2-fda3bc1ed13f,1,Acetaminophen 325 MG Oral Tablet
+1ea40a05-c295-8b66-66a2-fda3bc1ed13f,2,Naproxen sodium 220 MG Oral Tablet
+1ea40a05-c295-8b66-66a2-fda3bc1ed13f,3,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+1f06f787-61cd-dd2d-a6b2-347507100f10,0,Acetaminophen 325 MG Oral Tablet
+1f06f787-61cd-dd2d-a6b2-347507100f10,1,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+246fb368-8991-dc93-f6a5-eca807e7dbde,0,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet
+246fb368-8991-dc93-f6a5-eca807e7dbde,1,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector
+246fb368-8991-dc93-f6a5-eca807e7dbde,2,lisinopril 10 MG Oral Tablet
+246fb368-8991-dc93-f6a5-eca807e7dbde,3,Seasonique 91 Day Pack
+246fb368-8991-dc93-f6a5-eca807e7dbde,4,Azithromycin 250mg
+355a3cad-a055-c14b-117e-47accfc708ca,0,Errin 28 Day Pack
+355a3cad-a055-c14b-117e-47accfc708ca,1,Jolivette 28 Day Pack
+355a3cad-a055-c14b-117e-47accfc708ca,2,1 ML medroxyprogesterone acetate 150 MG/ML Injection
+39b4eaac-6d32-3610-6cdf-20196fd708cb,0,Acetaminophen 325 MG Oral Tablet
+39b4eaac-6d32-3610-6cdf-20196fd708cb,1,Acetaminophen 325 MG / oxyCODONE Hydrochloride 5 MG Oral Tablet
+39b4eaac-6d32-3610-6cdf-20196fd708cb,2,Levora 0.15/30 28 Day Pack
+3a364909-94ec-e0c4-0156-8a2e15fa354e,0,Hydrochlorothiazide 25 MG Oral Tablet
+3a364909-94ec-e0c4-0156-8a2e15fa354e,1,lisinopril 10 MG Oral Tablet
+3a364909-94ec-e0c4-0156-8a2e15fa354e,2,Simvastatin 10 MG Oral Tablet
+3a364909-94ec-e0c4-0156-8a2e15fa354e,3,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+3a364909-94ec-e0c4-0156-8a2e15fa354e,4,Acetaminophen 325 MG Oral Tablet
+3beee40e-512b-420f-38a3-28e56cddbc9b,0,Chlorpheniramine Maleate 2 MG/ML Oral Solution
+3beee40e-512b-420f-38a3-28e56cddbc9b,1,amLODIPine 2.5 MG Oral Tablet
+3beee40e-512b-420f-38a3-28e56cddbc9b,2,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet
+3beee40e-512b-420f-38a3-28e56cddbc9b,3,Vitamin B 12 5 MG/ML Injectable Solution
+3beee40e-512b-420f-38a3-28e56cddbc9b,4,Acetaminophen 325 MG Oral Tablet [Tylenol]
+3beee40e-512b-420f-38a3-28e56cddbc9b,5,Acetaminophen 325 MG Oral Tablet
+3beee40e-512b-420f-38a3-28e56cddbc9b,6,doxycycline hyclate 100 MG
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,0,Ibuprofen 100 MG Oral Tablet
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,1,Penicillin V Potassium 250 MG Oral Tablet
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,2,Natazia 28 Day Pack
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,3,Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,4,Naproxen sodium 220 MG Oral Tablet
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,5,Levora 0.15/30 28 Day Pack
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,6,Hydrochlorothiazide 25 MG Oral Tablet
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,7,lisinopril 10 MG Oral Tablet
+561db9de-7617-4fed-b230-1553b8dd65f3,0,Camila 28 Day Pack
+561db9de-7617-4fed-b230-1553b8dd65f3,1,lisinopril 10 MG Oral Tablet
+561db9de-7617-4fed-b230-1553b8dd65f3,2,amLODIPine 2.5 MG Oral Tablet
+561db9de-7617-4fed-b230-1553b8dd65f3,3,Hydrochlorothiazide 25 MG Oral Tablet
+561db9de-7617-4fed-b230-1553b8dd65f3,4,Nitrofurantoin 5 MG/ML Oral Suspension
+561db9de-7617-4fed-b230-1553b8dd65f3,5,Phenazopyridine hydrochloride 100 MG Oral Tablet
+561db9de-7617-4fed-b230-1553b8dd65f3,6,Ibuprofen 200 MG Oral Tablet
+67c6597f-c239-a595-beac-b2941e7b54ff,0,Simvastatin 10 MG Oral Tablet
+67c6597f-c239-a595-beac-b2941e7b54ff,1,Penicillin V Potassium 500 MG Oral Tablet
+67c6597f-c239-a595-beac-b2941e7b54ff,2,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet
+67c6597f-c239-a595-beac-b2941e7b54ff,3,Amoxicillin 250 MG Oral Capsule
+67c6597f-c239-a595-beac-b2941e7b54ff,4,Naproxen sodium 220 MG Oral Tablet
+67c6597f-c239-a595-beac-b2941e7b54ff,5,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+68444584-c6e0-8d53-923e-ce79ba7c1911,0,Ibuprofen 100 MG Oral Tablet
+68444584-c6e0-8d53-923e-ce79ba7c1911,1,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+68444584-c6e0-8d53-923e-ce79ba7c1911,2,Cefuroxime 250 MG Oral Tablet
+6ab08a28-1670-be6a-f2c9-f2e248700836,0,Jolivette 28 Day Pack
+6ab08a28-1670-be6a-f2c9-f2e248700836,1,Seasonique 91 Day Pack
+6ab08a28-1670-be6a-f2c9-f2e248700836,2,Acetaminophen 325 MG Oral Tablet
+6ab08a28-1670-be6a-f2c9-f2e248700836,3,lisinopril 10 MG Oral Tablet
+6ab08a28-1670-be6a-f2c9-f2e248700836,4,amLODIPine 2.5 MG Oral Tablet
+6ab08a28-1670-be6a-f2c9-f2e248700836,5,Hydrochlorothiazide 25 MG Oral Tablet
+6ab08a28-1670-be6a-f2c9-f2e248700836,6,Errin 28 Day Pack
+6ab08a28-1670-be6a-f2c9-f2e248700836,7,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+6ab08a28-1670-be6a-f2c9-f2e248700836,8,Penicillin V Potassium 500 MG Oral Tablet
+6d715e84-4c7a-e4a9-e8ce-6065e2607107,0,Levora 0.15/30 28 Day Pack
+6d715e84-4c7a-e4a9-e8ce-6065e2607107,1,Jolivette 28 Day Pack
+6d715e84-4c7a-e4a9-e8ce-6065e2607107,2,Ibuprofen 200 MG Oral Tablet
+6d715e84-4c7a-e4a9-e8ce-6065e2607107,3,1 ML medroxyprogesterone acetate 150 MG/ML Injection
+6d715e84-4c7a-e4a9-e8ce-6065e2607107,4,Trinessa 28 Day Pack
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,0,lisinopril 10 MG Oral Tablet
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,1,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,2,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,3,Nitrofurantoin 5 MG/ML Oral Suspension
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,4,Phenazopyridine hydrochloride 100 MG Oral Tablet
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,5,168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,6,Jolivette 28 Day Pack
+6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,7,Etonogestrel 68 MG Drug Implant
+752a3c69-44d7-d6af-0340-7d3e748f6060,0,Naproxen sodium 220 MG Oral Tablet
+752a3c69-44d7-d6af-0340-7d3e748f6060,1,Yaz 28 Day Pack
+752a3c69-44d7-d6af-0340-7d3e748f6060,2,Natazia 28 Day Pack
+752a3c69-44d7-d6af-0340-7d3e748f6060,3,Levora 0.15/30 28 Day Pack
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,0,Naproxen 500 MG Oral Tablet
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,1,Milnacipran hydrochloride 100 MG Oral Tablet
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,2,"1 ML heparin sodium, porcine 5000 UNT/ML Injection"
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,3,Sodium Chloride 9 MG/ML Injectable Solution
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,4,2 ML Ondansetron 2 MG/ML Injection
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,5,1 ML Morphine Sulfate 5 MG/ML Injection
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,6,Piperacillin 4000 MG / tazobactam 500 MG Injection
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,7,Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,8,Mirena 52 MG Intrauterine System
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,9,duloxetine 20 MG Delayed Release Oral Capsule
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,10,Acetaminophen 325 MG Oral Tablet
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,11,Jolivette 28 Day Pack
+7d28d76a-9ac8-67b4-3c88-0a75be3d0851,12,Seasonique 91 Day Pack
+84fee56a-9ef7-8cff-e7d3-526ece562d87,0,Ibuprofen 400 MG Oral Tablet [Ibu]
+84fee56a-9ef7-8cff-e7d3-526ece562d87,1,Acetaminophen 325 MG Oral Tablet [Tylenol]
+84fee56a-9ef7-8cff-e7d3-526ece562d87,2,Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]
+84fee56a-9ef7-8cff-e7d3-526ece562d87,3,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet
+84fee56a-9ef7-8cff-e7d3-526ece562d87,4,tramadol hydrochloride 50 MG Oral Tablet
+84fee56a-9ef7-8cff-e7d3-526ece562d87,5,Acetaminophen 325 MG Oral Tablet
+86dbfa87-dc1c-e529-f39b-4910e4deb3fb,0,Yaz 28 Day Pack
+86dbfa87-dc1c-e529-f39b-4910e4deb3fb,1,Ibuprofen 200 MG Oral Tablet
+86dbfa87-dc1c-e529-f39b-4910e4deb3fb,2,Mirena 52 MG Intrauterine System
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,0,ferrous sulfate 325 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,1,Vitamin B 12 5 MG/ML Injectable Solution
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,2,lisinopril 10 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,3,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,4,"insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]"
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,5,Simvastatin 10 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,6,Acetaminophen 325 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,7,Alendronic acid 10 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,8,Galantamine 4 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,9,Meperidine Hydrochloride 50 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,10,Naproxen sodium 220 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,11,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,12,Amoxicillin 250 MG Oral Capsule
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,13,Clopidogrel 75 MG Oral Tablet
+8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,14,Alteplase 100 MG Injection
+90053970-cbf7-9102-32f1-61c1b05827a8,0,Acetaminophen 325 MG Oral Tablet [Tylenol]
+9055bf8d-a995-d068-a3e0-666a002b5683,0,Cefuroxime 250 MG Oral Tablet
+9055bf8d-a995-d068-a3e0-666a002b5683,1,Ibuprofen 100 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,0,Acetaminophen 325 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,1,Cefuroxime 250 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,2,Ibuprofen 200 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,3,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,4,Furosemide 40 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,5,carvedilol 25 MG Oral Tablet
+965ecf4b-40d6-02e3-fe08-acd9eafc68fe,6,losartan potassium 50 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,0,Acetaminophen 325 MG / oxyCODONE Hydrochloride 5 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,1,Ibuprofen 200 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,2,Meperidine Hydrochloride 50 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,3,Alendronic acid 10 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,4,Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,5,Acetaminophen 325 MG Oral Tablet
+9b94051f-59a9-c941-61af-9acf2a9af22f,6,Naproxen sodium 220 MG Oral Tablet
+9bbc77f6-c1e1-0c48-c64e-eb5958f15faf,0,Penicillin V Potassium 250 MG Oral Tablet
+a3752f35-b99c-5da7-a16a-f6e06adc97ac,0,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+a67877ad-5f7a-782d-c74c-0aa5d2072de3,0,Trinessa 28 Day Pack
+a67877ad-5f7a-782d-c74c-0aa5d2072de3,1,Levora 0.15/30 28 Day Pack
+a67877ad-5f7a-782d-c74c-0aa5d2072de3,2,Yaz 28 Day Pack
+a8eed586-7fc7-e064-78ee-c6d227039940,0,Amoxicillin 500 MG Oral Tablet
+a8eed586-7fc7-e064-78ee-c6d227039940,1,Acetaminophen 160 MG Chewable Tablet
+a8eed586-7fc7-e064-78ee-c6d227039940,2,Ibuprofen 100 MG Oral Tablet
+add236d5-0131-8a3f-8b55-a081df83922e,0,Seasonique 91 Day Pack
+add236d5-0131-8a3f-8b55-a081df83922e,1,Naproxen sodium 220 MG Oral Tablet
+add236d5-0131-8a3f-8b55-a081df83922e,2,Natazia 28 Day Pack
+add236d5-0131-8a3f-8b55-a081df83922e,3,amLODIPine 2.5 MG Oral Tablet
+add236d5-0131-8a3f-8b55-a081df83922e,4,Yaz 28 Day Pack
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,0,Fexofenadine hydrochloride 30 MG Oral Tablet
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,1,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,2,120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,3,NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,4,Acetaminophen 325 MG Oral Tablet
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,5,Amoxicillin 250 MG Oral Capsule
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,6,Ibuprofen 200 MG Oral Tablet
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,7,Penicillin V Potassium 250 MG Oral Tablet
+ce1153cb-d4ad-77e2-cd07-575e249a83ad,8,Natazia 28 Day Pack
+d1ac7006-362b-cc1d-d516-f11d65055473,0,120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler
+d1ac7006-362b-cc1d-d516-f11d65055473,1,NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler
+d1ac7006-362b-cc1d-d516-f11d65055473,2,Warfarin Sodium 5 MG Oral Tablet
+d1ac7006-362b-cc1d-d516-f11d65055473,3,Verapamil Hydrochloride 40 MG
+d1ac7006-362b-cc1d-d516-f11d65055473,4,Digoxin 0.125 MG Oral Tablet
+d1ac7006-362b-cc1d-d516-f11d65055473,5,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+d1ac7006-362b-cc1d-d516-f11d65055473,6,Acetaminophen 325 MG Oral Tablet
+dc6c06d0-a7d8-100f-c08b-46c93700c188,0,Ibuprofen 100 MG Oral Tablet
+dc6c06d0-a7d8-100f-c08b-46c93700c188,1,Penicillin V Potassium 250 MG Oral Tablet
+f7a3acd9-1c09-59d6-dbaa-079164cbe703,0,Hydrochlorothiazide 25 MG Oral Tablet
+f7a3acd9-1c09-59d6-dbaa-079164cbe703,1,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+f7a3acd9-1c09-59d6-dbaa-079164cbe703,2,Acetaminophen 325 MG Oral Tablet
+f7a3acd9-1c09-59d6-dbaa-079164cbe703,3,Ibuprofen 200 MG Oral Tablet
+fabb7ac2-1c62-3293-f43c-e35fb903c1c7,0,Acetaminophen 325 MG Oral Tablet
+fabb7ac2-1c62-3293-f43c-e35fb903c1c7,1,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+fabb7ac2-1c62-3293-f43c-e35fb903c1c7,2,Amoxicillin 250 MG Oral Capsule
+fabb7ac2-1c62-3293-f43c-e35fb903c1c7,3,Ibuprofen 200 MG Oral Tablet
+ff9f14e4-d241-71fe-a501-2199e39aa79a,0,atomoxetine 100 MG Oral Capsule
+ff9f14e4-d241-71fe-a501-2199e39aa79a,1,Amoxicillin 500 MG Oral Tablet
+ff9f14e4-d241-71fe-a501-2199e39aa79a,2,Ibuprofen 200 MG Oral Tablet
+ff9f14e4-d241-71fe-a501-2199e39aa79a,3,Acetaminophen 325 MG Oral Tablet [Tylenol]
+ff9f14e4-d241-71fe-a501-2199e39aa79a,4,tramadol hydrochloride 50 MG Oral Tablet

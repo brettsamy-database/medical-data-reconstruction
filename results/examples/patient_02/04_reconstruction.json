@@ -1,0 +1,12 @@
+{
+  "patient_name": "Manuela585 Villalpando154",
+  "date_of_birth": "2010-11-12",
+  "gender": "female",
+  "conditions": [
+    "otitis media"
+  ],
+  "medication_requests": [
+    "Cefuroxime 250 MG Oral Tablet",
+    "Ibuprofen 100 MG Oral Tablet"
+  ]
+}

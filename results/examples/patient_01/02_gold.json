@@ -1,0 +1,93 @@
+{
+  "patient_id": "3a364909-94ec-e0c4-0156-8a2e15fa354e",
+  "given": "German382",
+  "family": "Trantow673",
+  "full_name": "German382 Trantow673",
+  "birthDate": "1961-08-10",
+  "gender": "male",
+  "conditions_candidates": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "59621000",
+      "display": "Hypertension"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "5251000175109",
+      "display": "Received certificate of high school equivalency (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "713458007",
+      "display": "Lack of access to transportation (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "266934004",
+      "display": "Transport problems (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "162864005",
+      "display": "Body mass index 30+ - obesity (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "55822004",
+      "display": "Hyperlipidemia"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "195662009",
+      "display": "Acute viral pharyngitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "444814009",
+      "display": "Viral sinusitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "43878008",
+      "display": "Streptococcal sore throat (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "10509002",
+      "display": "Acute bronchitis (disorder)"
+    }
+  ],
+  "conditions": [
+    "Hypertension",
+    "Received certificate of high school equivalency (finding)",
+    "Lack of access to transportation (finding)",
+    "Transport problems (finding)",
+    "Body mass index 30+ - obesity (finding)",
+    "Hyperlipidemia",
+    "Acute viral pharyngitis (disorder)",
+    "Viral sinusitis (disorder)",
+    "Streptococcal sore throat (disorder)",
+    "Acute bronchitis (disorder)"
+  ],
+  "medication_requests": [
+    "Hydrochlorothiazide 25 MG Oral Tablet",
+    "lisinopril 10 MG Oral Tablet",
+    "Simvastatin 10 MG Oral Tablet",
+    "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
+    "Acetaminophen 325 MG Oral Tablet"
+  ],
+  "conditions_llm": [
+    "Hypertension",
+    "Received certificate of high school equivalency (finding)",
+    "Lack of access to transportation (finding)",
+    "Transport problems (finding)",
+    "Body mass index 30+ - obesity (finding)",
+    "Hyperlipidemia",
+    "Acute viral pharyngitis (disorder)",
+    "Viral sinusitis (disorder)",
+    "Streptococcal sore throat (disorder)",
+    "Acute bronchitis (disorder)"
+  ],
+  "note_style": "medical_history_note",
+  "note_style_label": "Medical history note"
+}

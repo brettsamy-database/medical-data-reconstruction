@@ -1,0 +1,22 @@
+note_style,note_style_label,error_taxonomy_medication_requests_overall,n
+consult_note_short,Short consultation note,over_extraction_from_note,3
+consult_note_short,Short consultation note,source_to_note_gap_or_generation_loss,3
+consult_note_short,Short consultation note,recall_dominant_pipeline_error,2
+consult_note_short,Short consultation note,exact_wording_gap_only,1
+consult_note_short,Short consultation note,perfect_reconstruction,1
+health_check_summary,Health check summary,perfect_reconstruction,4
+health_check_summary,Health check summary,canonicalization_or_exact_match_gap,2
+health_check_summary,Health check summary,partial_pipeline_error,1
+health_check_summary,Health check summary,recall_dominant_pipeline_error,1
+health_check_summary,Health check summary,source_to_note_gap_or_generation_loss,1
+health_check_summary,Health check summary,under_extraction_from_note,1
+medical_history_note,Medical history note,perfect_reconstruction,4
+medical_history_note,Medical history note,exact_wording_gap_only,3
+medical_history_note,Medical history note,over_extraction_from_note,2
+medical_history_note,Medical history note,under_extraction_from_note,1
+telegraphic_note,Telegraphic note,over_extraction_from_note,3
+telegraphic_note,Telegraphic note,perfect_reconstruction,2
+telegraphic_note,Telegraphic note,source_to_note_gap_or_generation_loss,2
+telegraphic_note,Telegraphic note,complete_omission,1
+telegraphic_note,Telegraphic note,recall_dominant_pipeline_error,1
+telegraphic_note,Telegraphic note,under_extraction_from_note,1

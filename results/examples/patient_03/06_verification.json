@@ -1,0 +1,11 @@
+{
+  "patient_id": "d1ac7006-362b-cc1d-d516-f11d65055473",
+  "signature": "c2b9e41c7da159aa0130072dbf5b401ce2a9e0384c7d68333ad2189a3c3b86ac",
+  "verdict": "consistent",
+  "confidence": 1.0,
+  "unsupported_conditions": [],
+  "missing_conditions_from_reconstruction": [],
+  "unsupported_medication_requests": [],
+  "missing_medication_requests_from_reconstruction": [],
+  "summary": "The reconstruction accurately reflects the conditions and medication requests mentioned in the clinical note."
+}

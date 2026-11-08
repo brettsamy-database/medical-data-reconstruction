@@ -1,0 +1,27 @@
+{
+  "patient_id": "9055bf8d-a995-d068-a3e0-666a002b5683",
+  "given": "Manuela585",
+  "family": "Villalpando154",
+  "full_name": "Manuela585 Villalpando154",
+  "birthDate": "2010-11-12",
+  "gender": "female",
+  "conditions_candidates": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "65363002",
+      "display": "Otitis media"
+    }
+  ],
+  "conditions": [
+    "Otitis media"
+  ],
+  "medication_requests": [
+    "Cefuroxime 250 MG Oral Tablet",
+    "Ibuprofen 100 MG Oral Tablet"
+  ],
+  "conditions_llm": [
+    "Otitis media"
+  ],
+  "note_style": "health_check_summary",
+  "note_style_label": "Health check summary"
+}

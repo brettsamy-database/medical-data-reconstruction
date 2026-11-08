@@ -1,10 +1,19 @@
-pandas
-numpy
-fhir.resources
-openai
-pydantic
+# Données et calcul
+pandas>=2.0
+matplotlib>=3.7
+requests>=2.31
+tqdm>=4.66
+pydantic>=2.0
+
+# Modèle MedGemma (google/medgemma-4b-it) via Hugging Face
+torch
+transformers>=4.41
+accelerate>=0.30
+sentencepiece>=0.2
+huggingface_hub>=0.23
+bitsandbytes>=0.43   # repli en 4-bit si le modèle ne tient pas en mémoire
+
+# Environnement
+python-dotenv        # charge HF_TOKEN depuis le fichier .env
 jupyter
-matplotlib
-seaborn
-python-dotenv
 pytest

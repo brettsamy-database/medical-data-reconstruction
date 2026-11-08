@@ -1,0 +1,19 @@
+{
+  "patient_name": "Nita296 McLaughlin530",
+  "date_of_birth": "1932-09-18",
+  "gender": "female",
+  "conditions": [
+    "miscarriage",
+    "atrial fibrillation",
+    "acute bronchitis",
+    "viral sinusitis",
+    "sprain of ankle"
+  ],
+  "medication_requests": [
+    "120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler NDA020503",
+    "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler Warfarin Sodium 5 MG Oral Tablet",
+    "Verapamil Hydrochloride 40 MG",
+    "Digoxin 0.125 MG Oral Tablet",
+    "Acetaminophen 21.7 MG/ML"
+  ]
+}
