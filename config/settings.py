@@ -1,16 +1,12 @@
-"""Paramètres centralisés du pipeline BUPA.
+"""Tous les paramètres du pipeline, au même endroit.
 
-Toutes les valeurs reprennent celles du notebook original
-(`BUPA_benchmark_final.ipynb`, cellule « 1) Imports, chemins, configuration »).
-Les chemins sont désormais ancrés à la racine du dépôt :
+Les modules de `src/` lisent ces valeurs au moment de l'appel (`settings.X`) :
+on peut donc les modifier depuis un notebook avant de lancer une étape, par
+exemple ``settings.N_PATIENTS = 5`` pour un essai rapide.
 
-    data/raw/            -> zip Synthea + bundles FHIR extraits
-    data/processed/      -> bundles filtrés, notes, reconstructions, scores, caches
-    data/gold_standard/  -> gold source (un JSON par patient)
-
-Les modules de `src/` lisent ces valeurs au moment de l'appel
-(`settings.X`), on peut donc les modifier depuis un notebook avant de lancer
-une étape, par exemple ``settings.N_PATIENTS = 40``.
+    data/raw/            archive Synthea et bundles FHIR extraits
+    data/processed/      bundles filtrés, notes, reconstructions, scores, caches LLM
+    data/gold_standard/  gold source, un JSON par patient
 """
 
 from __future__ import annotations
@@ -74,7 +70,7 @@ ZIP_PATH = ZIP_DIR / "synthea_fhir_r4.zip"
 # Modèle et échantillon
 # =========================
 MODEL_NAME = "google/medgemma-4b-it"
-N_PATIENTS = 40          
+N_PATIENTS = 40          # 10 patients par style de note
 RANDOM_SEED = 155
 
 # =========================
@@ -125,11 +121,13 @@ LLM_FILTER_RETRIES = 1
 MAX_CONDITIONS_PER_PATIENT = 12
 MAX_MEDICATION_REQUESTS_PER_PATIENT = 12
 
-PREVIEW_N = 6
+PREVIEW_N = 6  # nombre d'éléments affichés dans les colonnes *_preview des tables
 
 # =========================
 # Budgets de génération
 # =========================
+# Assez larges pour une note complète ou un JSON de 12 éléments, sans plus :
+# chaque token généré coûte du temps sur 40 patients.
 NOTE_GENERATION_MAX_NEW_TOKENS = 320
 RECON_EXTRACTION_MAX_NEW_TOKENS = 220
 RECON_FIX_JSON_MAX_NEW_TOKENS = 256
@@ -137,7 +135,8 @@ SEMANTIC_MATCH_MAX_NEW_TOKENS = 96
 NOTE_CONSISTENCY_MAX_NEW_TOKENS = 256
 VERIFICATION_MAX_NEW_TOKENS = 256
 
-# Températures / échantillonnage
+# Seule la génération des notes est aléatoire, pour varier l'écriture d'un patient à l'autre.
+# Tout le reste (extraction, scoring, vérification) est glouton, donc reproductible.
 NOTE_GENERATION_TEMPERATURE = 0.8
 NOTE_GENERATION_DO_SAMPLE = True
 RECON_TEMPERATURE = 0.0

@@ -1,159 +1,207 @@
 patient_id,rank,condition
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,0,atopic dermatitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,1,otitis media
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,2,perennial allergic rhinitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,3,acute viral pharyngitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,4,viral sinusitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,5,streptococcal sore throat
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,6,sinusitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,7,chronic sinusitis
-03777c32-ed98-50e2-f75d-cbcad532c610,0,obesity
-03777c32-ed98-50e2-f75d-cbcad532c610,1,Coronary Heart Disease
-03777c32-ed98-50e2-f75d-cbcad532c610,2,Osteoarthritis
-03777c32-ed98-50e2-f75d-cbcad532c610,3,acute bronchitis
-03777c32-ed98-50e2-f75d-cbcad532c610,4,severe anxiety (panic)
-0a168e32-7b62-8597-0e11-296871bb764f,0,appendicitis
-0a168e32-7b62-8597-0e11-296871bb764f,1,acute bronchitis
-0a168e32-7b62-8597-0e11-296871bb764f,2,viral sinusitis
-0a168e32-7b62-8597-0e11-296871bb764f,3,fracture subluxation of wrist
-0a168e32-7b62-8597-0e11-296871bb764f,4,hypertension
-122b4063-18dc-f20f-204c-6f2da758717b,0,Viral sinusitis
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,0,Sepsis
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,1,Chronic sinusitis
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,2,Prediabetes
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,3,Diabetes
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,4,Hypertension
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,5,Hyperglycemia
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,6,Hypertriglyceridemia
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,7,Metabolic syndrome X
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,8,Neuropathy
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,9,Viral sinusitis
-162135b4-931d-a531-c2ad-047b0c24abe8,0,acute viral pharyngitis
-162135b4-931d-a531-c2ad-047b0c24abe8,1,childhood asthma
-162135b4-931d-a531-c2ad-047b0c24abe8,2,otitis media
-162135b4-931d-a531-c2ad-047b0c24abe8,3,fracture subluxation of wrist
-162135b4-931d-a531-c2ad-047b0c24abe8,4,coronary heart disease
-1ea40a05-c295-8b66-66a2-fda3bc1ed13f,0,acute viral pharyngitis
-1ea40a05-c295-8b66-66a2-fda3bc1ed13f,1,anemia
-1f06f787-61cd-dd2d-a6b2-347507100f10,0,appendicitis
-1f06f787-61cd-dd2d-a6b2-347507100f10,1,ruptured appendix
-1f06f787-61cd-dd2d-a6b2-347507100f10,2,acute viral pharyngitis
-1f06f787-61cd-dd2d-a6b2-347507100f10,3,viral sinusitis
-1f06f787-61cd-dd2d-a6b2-347507100f10,4,facial laceration
-246fb368-8991-dc93-f6a5-eca807e7dbde,0,Hypertension
-246fb368-8991-dc93-f6a5-eca807e7dbde,1,Chronic neck pain
-246fb368-8991-dc93-f6a5-eca807e7dbde,2,Seasonal allergies
-246fb368-8991-dc93-f6a5-eca807e7dbde,3,Viral sinusitis
-246fb368-8991-dc93-f6a5-eca807e7dbde,4,Streptococcal sore throat
-246fb368-8991-dc93-f6a5-eca807e7dbde,5,Acute viral pharyngitis
-246fb368-8991-dc93-f6a5-eca807e7dbde,6,Pregnancy
-355a3cad-a055-c14b-117e-47accfc708ca,0,cerebral palsy
-355a3cad-a055-c14b-117e-47accfc708ca,1,osteoporosis
-355a3cad-a055-c14b-117e-47accfc708ca,2,intellectual disability
-355a3cad-a055-c14b-117e-47accfc708ca,3,dislocation of hip joint
-355a3cad-a055-c14b-117e-47accfc708ca,4,pneumonia
-355a3cad-a055-c14b-117e-47accfc708ca,5,otitis media
-355a3cad-a055-c14b-117e-47accfc708ca,6,injury of tendon of the rotator cuff of shoulder
-39b4eaac-6d32-3610-6cdf-20196fd708cb,0,acute bronchitis
-39b4eaac-6d32-3610-6cdf-20196fd708cb,1,fracture of forearm
-3a364909-94ec-e0c4-0156-8a2e15fa354e,0,Hypertension
-3a364909-94ec-e0c4-0156-8a2e15fa354e,1,Hyperlipidemia
-3a364909-94ec-e0c4-0156-8a2e15fa354e,2,Obesity
-3beee40e-512b-420f-38a3-28e56cddbc9b,0,Atopic dermatitis
-3beee40e-512b-420f-38a3-28e56cddbc9b,1,Obesity
-3beee40e-512b-420f-38a3-28e56cddbc9b,2,Prediabetes
-3beee40e-512b-420f-38a3-28e56cddbc9b,3,Diabetes
-3beee40e-512b-420f-38a3-28e56cddbc9b,4,Hypertension
-3beee40e-512b-420f-38a3-28e56cddbc9b,5,Hypertriglyceridemia
-3beee40e-512b-420f-38a3-28e56cddbc9b,6,Metabolic syndrome X
-3beee40e-512b-420f-38a3-28e56cddbc9b,7,Anemia
-3beee40e-512b-420f-38a3-28e56cddbc9b,8,Hyperglycemia
-3beee40e-512b-420f-38a3-28e56cddbc9b,9,Neuropathy due to type 2 diabetes mellitus
-3beee40e-512b-420f-38a3-28e56cddbc9b,10,Chronic neck pain
-51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,0,chronic low back pain
-51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,1,chronic neck pain
-51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,2,viral sinusitis
-561db9de-7617-4fed-b230-1553b8dd65f3,0,acute viral pharyngitis
-561db9de-7617-4fed-b230-1553b8dd65f3,1,viral sinusitis
-561db9de-7617-4fed-b230-1553b8dd65f3,2,Escherichia coli urinary tract infection
-561db9de-7617-4fed-b230-1553b8dd65f3,3,severe anxiety (panic)
-561db9de-7617-4fed-b230-1553b8dd65f3,4,sprain of her ankle
-67c6597f-c239-a595-beac-b2941e7b54ff,0,obesity
-67c6597f-c239-a595-beac-b2941e7b54ff,1,hyperlipidemia
-67c6597f-c239-a595-beac-b2941e7b54ff,2,streptococcal sore throat
-67c6597f-c239-a595-beac-b2941e7b54ff,3,chronic neck pain
-67c6597f-c239-a595-beac-b2941e7b54ff,4,otitis media
-67c6597f-c239-a595-beac-b2941e7b54ff,5,acute bronchitis
-68444584-c6e0-8d53-923e-ce79ba7c1911,0,viral sinusitis
-68444584-c6e0-8d53-923e-ce79ba7c1911,1,otitis media
-6ab08a28-1670-be6a-f2c9-f2e248700836,0,acute viral pharyngitis
-6ab08a28-1670-be6a-f2c9-f2e248700836,1,acute bacterial sinusitis
-6ab08a28-1670-be6a-f2c9-f2e248700836,2,acute bronchitis
-6ab08a28-1670-be6a-f2c9-f2e248700836,3,hypertension
-6ab08a28-1670-be6a-f2c9-f2e248700836,4,severely obese
-6ab08a28-1670-be6a-f2c9-f2e248700836,5,body mass index of 40+
-6d715e84-4c7a-e4a9-e8ce-6065e2607107,0,fracture subluxation of wrist
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,0,Hypertension
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,1,Chronic sinusitis
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,2,Chronic low back pain
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,3,Escherichia coli urinary tract infection
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,4,Miscarriage in first trimester
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,5,Preeclampsia
-752a3c69-44d7-d6af-0340-7d3e748f6060,0,Ankle pain
-752a3c69-44d7-d6af-0340-7d3e748f6060,1,Irregular bleeding
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,0,anemia
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,1,cholelithiasis
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,2,chronic neck pain
-84fee56a-9ef7-8cff-e7d3-526ece562d87,0,acute viral pharyngitis
-84fee56a-9ef7-8cff-e7d3-526ece562d87,1,viral sinusitis
-84fee56a-9ef7-8cff-e7d3-526ece562d87,2,chronic neck pain
-84fee56a-9ef7-8cff-e7d3-526ece562d87,3,first-degree burn
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,0,cough
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,1,loss of taste
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,2,fracture of rib
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,3,pregnancy
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,4,suspected COVID-19
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,5,pneumonia
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,6,hypoxemia
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,7,sepsis caused by virus
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,8,acute pulmonary embolism
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,9,recurrent urinary tract infection
-8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,0,diabetic renal disease
-8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,1,knee pain
-90053970-cbf7-9102-32f1-61c1b05827a8,0,anemia
-90053970-cbf7-9102-32f1-61c1b05827a8,1,suspected COVID-19
-9055bf8d-a995-d068-a3e0-666a002b5683,0,otitis media
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,0,chronic congestive heart failure
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,1,prediabetes
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,2,acute bacterial sinusitis
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,3,otitis media
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,4,acute viral pharyngitis
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,5,acute bronchitis
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,6,laceration of his thigh
-9bbc77f6-c1e1-0c48-c64e-eb5958f15faf,0,acute viral pharyngitis
-a3752f35-b99c-5da7-a16a-f6e06adc97ac,0,viral sinusitis
-a67877ad-5f7a-782d-c74c-0aa5d2072de3,0,viral sinusitis
-a8eed586-7fc7-e064-78ee-c6d227039940,0,acute viral pharyngitis
-a8eed586-7fc7-e064-78ee-c6d227039940,1,otitis media
-a8eed586-7fc7-e064-78ee-c6d227039940,2,viral sinusitis
-add236d5-0131-8a3f-8b55-a081df83922e,0,Hypertension
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,0,childhood asthma
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,1,seasonal allergic rhinitis
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,2,recent viral sinusitis
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,3,acute bronchitis
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,4,acute viral pharyngitis
-d1ac7006-362b-cc1d-d516-f11d65055473,0,miscarriage
-d1ac7006-362b-cc1d-d516-f11d65055473,1,atrial fibrillation
-d1ac7006-362b-cc1d-d516-f11d65055473,2,acute bronchitis
-d1ac7006-362b-cc1d-d516-f11d65055473,3,viral sinusitis
-d1ac7006-362b-cc1d-d516-f11d65055473,4,sprain of ankle
-dc6c06d0-a7d8-100f-c08b-46c93700c188,0,acute viral pharyngitis
-f7a3acd9-1c09-59d6-dbaa-079164cbe703,0,viral sinusitis
-f7a3acd9-1c09-59d6-dbaa-079164cbe703,1,acute bronchitis
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,0,acute viral pharyngitis
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,1,acute bronchitis
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,2,headache
-ff9f14e4-d241-71fe-a501-2199e39aa79a,0,child attention deficit disorder
-ff9f14e4-d241-71fe-a501-2199e39aa79a,1,otitis media
-ff9f14e4-d241-71fe-a501-2199e39aa79a,2,chronic low back pain
-ff9f14e4-d241-71fe-a501-2199e39aa79a,3,chronic neck pain
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,0,Prediabetes
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,1,Anemia
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,2,Stroke
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,3,Viral sinusitis
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,0,anemia
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,1,acute bacterial sinusitis
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,2,chronic sinusitis
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,3,osteoporosis
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,0,obesity
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,1,prediabetes
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,2,anemia
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,3,foot laceration
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,4,chronic low back pain
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,5,acute bronchitis
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,6,unhealthy alcohol drinking behavior
+217f95a3-4e10-bd5d-fb67-0cfb5e8ba075,0,chronic sinusitis
+217f95a3-4e10-bd5d-fb67-0cfb5e8ba075,1,viral sinusitis
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,0,atopic dermatitis
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,1,streptococcal sore throat
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,2,sinusitis
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,3,viral sinusitis
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,4,laceration of her forearm
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,5,acute bronchitis
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,0,intractable migraine without aura
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,1,obesity
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,2,Streptococcal sore throat
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,3,otitis media
+319372b8-27b1-b827-5c89-ac991fc17407,0,hypertension
+319372b8-27b1-b827-5c89-ac991fc17407,1,ruptured appendix
+319372b8-27b1-b827-5c89-ac991fc17407,2,appendicitis
+319372b8-27b1-b827-5c89-ac991fc17407,3,appendectomy
+319372b8-27b1-b827-5c89-ac991fc17407,4,obesity
+319372b8-27b1-b827-5c89-ac991fc17407,5,anemia
+319372b8-27b1-b827-5c89-ac991fc17407,6,prediabetic
+339144f8-50e1-633e-a013-f361391c4cff,0,Hypertension
+339144f8-50e1-633e-a013-f361391c4cff,1,Obesity
+339144f8-50e1-633e-a013-f361391c4cff,2,Sprain of ankle
+4f5a07ca-02e0-8981-3c30-4d9924a169a3,0,sinusitis
+4f5a07ca-02e0-8981-3c30-4d9924a169a3,1,prediabetes
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,0,Hypertension
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,1,Chronic low back pain
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,2,Chronic neck pain
+51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,3,Viral sinusitis
+563187cb-7236-8b85-e6bc-79f35538910d,0,viral sinusitis
+563187cb-7236-8b85-e6bc-79f35538910d,1,polyp of colon
+563187cb-7236-8b85-e6bc-79f35538910d,2,sprain of ankle
+56e2acb9-efb3-f7b5-39bd-c2a1f860e553,0,acute viral pharyngitis
+56e2acb9-efb3-f7b5-39bd-c2a1f860e553,1,viral sinusitis
+56e2acb9-efb3-f7b5-39bd-c2a1f860e553,2,acute bronchitis
+57e403fc-885a-3b44-804e-a034ca08413c,0,epilepsy
+57e403fc-885a-3b44-804e-a034ca08413c,1,prediabetes
+57e403fc-885a-3b44-804e-a034ca08413c,2,anemia
+5cac9f29-c0e1-551d-98a8-277cc8f578df,0,obesity
+5cac9f29-c0e1-551d-98a8-277cc8f578df,1,Miscarriage in first trimester
+5cac9f29-c0e1-551d-98a8-277cc8f578df,2,Prediabetes
+5cac9f29-c0e1-551d-98a8-277cc8f578df,3,Chronic sinusitis
+5cac9f29-c0e1-551d-98a8-277cc8f578df,4,Viral sinusitis
+5cac9f29-c0e1-551d-98a8-277cc8f578df,5,Laceration of thigh
+5cac9f29-c0e1-551d-98a8-277cc8f578df,6,Concussion with no loss of consciousness
+5cac9f29-c0e1-551d-98a8-277cc8f578df,7,Alzheimer's disease
+5cac9f29-c0e1-551d-98a8-277cc8f578df,8,Whiplash injury to neck
+5cac9f29-c0e1-551d-98a8-277cc8f578df,9,Stroke
+5cac9f29-c0e1-551d-98a8-277cc8f578df,10,closed fracture of hip
+5cd20da5-2f01-b94a-07fb-173648c58460,0,obesity
+5cd20da5-2f01-b94a-07fb-173648c58460,1,prediabetes
+5cd20da5-2f01-b94a-07fb-173648c58460,2,osteoarthritis of the knee
+5cd20da5-2f01-b94a-07fb-173648c58460,3,chronic sinusitis
+5cd20da5-2f01-b94a-07fb-173648c58460,4,miscarriage
+5cd20da5-2f01-b94a-07fb-173648c58460,5,anemia
+5cd20da5-2f01-b94a-07fb-173648c58460,6,osteoporosis
+5cd20da5-2f01-b94a-07fb-173648c58460,7,hyperlipidemia
+5cd20da5-2f01-b94a-07fb-173648c58460,8,fracture of the forearm
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,0,child attention deficit disorder
+72f91cc7-fb63-84e8-32ff-86456bfa446e,0,Hypertension
+72f91cc7-fb63-84e8-32ff-86456bfa446e,1,Prediabetes
+72f91cc7-fb63-84e8-32ff-86456bfa446e,2,Anemia
+72f91cc7-fb63-84e8-32ff-86456bfa446e,3,Chronic pain
+72f91cc7-fb63-84e8-32ff-86456bfa446e,4,Impacted molars
+72f91cc7-fb63-84e8-32ff-86456bfa446e,5,Chronic intractable migraine without aura
+72f91cc7-fb63-84e8-32ff-86456bfa446e,6,Drug overdose history
+72f91cc7-fb63-84e8-32ff-86456bfa446e,7,Polyp of colon
+72f91cc7-fb63-84e8-32ff-86456bfa446e,8,Recurrent rectal polyp
+72f91cc7-fb63-84e8-32ff-86456bfa446e,9,Chronic low back pain
+72f91cc7-fb63-84e8-32ff-86456bfa446e,10,Viral sinusitis
+747405cb-2f91-e54a-c123-55f4e9edfc4c,0,chronic intractable migraine without aura
+747405cb-2f91-e54a-c123-55f4e9edfc4c,1,concussion with loss of consciousness
+767e1d64-d100-a9ec-fe05-073c6857ffa8,0,Coronary Heart Disease
+767e1d64-d100-a9ec-fe05-073c6857ffa8,1,obesity
+767e1d64-d100-a9ec-fe05-073c6857ffa8,2,Osteoarthritis of knee
+767e1d64-d100-a9ec-fe05-073c6857ffa8,3,Miscarriage in first trimester
+767e1d64-d100-a9ec-fe05-073c6857ffa8,4,Viral sinusitis
+767e1d64-d100-a9ec-fe05-073c6857ffa8,5,Acute viral pharyngitis
+767e1d64-d100-a9ec-fe05-073c6857ffa8,6,Unhealthy alcohol drinking behavior
+767e1d64-d100-a9ec-fe05-073c6857ffa8,7,Otitis media
+767e1d64-d100-a9ec-fe05-073c6857ffa8,8,Acute bronchitis
+80534c6c-b12d-caa5-42de-b179fd7f9695,0,viral sinusitis
+80534c6c-b12d-caa5-42de-b179fd7f9695,1,acute viral pharyngitis
+80534c6c-b12d-caa5-42de-b179fd7f9695,2,neck pain
+80534c6c-b12d-caa5-42de-b179fd7f9695,3,prediabetes
+80534c6c-b12d-caa5-42de-b179fd7f9695,4,diabetes
+80534c6c-b12d-caa5-42de-b179fd7f9695,5,neuropathy
+81466d70-5714-130a-24dc-b7fa2e2bc15c,0,acute bacterial sinusitis
+83f922a9-3567-cb65-b57f-2da9cc05af15,0,diabetes
+83f922a9-3567-cb65-b57f-2da9cc05af15,1,hypertension
+83f922a9-3567-cb65-b57f-2da9cc05af15,2,hypertriglyceridemia
+83f922a9-3567-cb65-b57f-2da9cc05af15,3,neuropathy due to type 2 diabetes mellitus
+83f922a9-3567-cb65-b57f-2da9cc05af15,4,metabolic syndrome X
+83f922a9-3567-cb65-b57f-2da9cc05af15,5,miscarriage in first trimester
+83f922a9-3567-cb65-b57f-2da9cc05af15,6,acute viral pharyngitis
+83f922a9-3567-cb65-b57f-2da9cc05af15,7,viral sinusitis
+83f922a9-3567-cb65-b57f-2da9cc05af15,8,normal pregnancy
+859e5c6f-f1db-308d-0e33-57d392c1bf04,0,history of myocardial infarction
+859e5c6f-f1db-308d-0e33-57d392c1bf04,1,coronary heart disease
+859e5c6f-f1db-308d-0e33-57d392c1bf04,2,acute bronchitis
+859e5c6f-f1db-308d-0e33-57d392c1bf04,3,viral sinusitis
+859e5c6f-f1db-308d-0e33-57d392c1bf04,4,acute viral pharyngitis
+859e5c6f-f1db-308d-0e33-57d392c1bf04,5,appendectomy
+859e5c6f-f1db-308d-0e33-57d392c1bf04,6,appendicitis
+859e5c6f-f1db-308d-0e33-57d392c1bf04,7,otitis media
+8fa5a097-1970-9370-4193-a7baa3d235b5,0,acute viral pharyngitis
+8fa5a097-1970-9370-4193-a7baa3d235b5,1,acute bronchitis
+8fa5a097-1970-9370-4193-a7baa3d235b5,2,left foot laceration
+8fa5a097-1970-9370-4193-a7baa3d235b5,3,chronic low back pain
+8fa5a097-1970-9370-4193-a7baa3d235b5,4,sprain of right wrist
+8fa5a097-1970-9370-4193-a7baa3d235b5,5,wheezing
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,0,Otitis media
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,1,Fracture subluxation of wrist
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,2,Viral sinusitis
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,3,Concussion with no loss of consciousness
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,4,Nasal congestion
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,5,Fever
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,6,Loss of taste
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,7,Suspected COVID-19
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,8,COVID-19
+a7624ac9-6308-e015-1c5c-115c97c631fe,0,miscarriage
+a7624ac9-6308-e015-1c5c-115c97c631fe,1,tubal pregnancy
+a7624ac9-6308-e015-1c5c-115c97c631fe,2,hyperlipidemia
+a7624ac9-6308-e015-1c5c-115c97c631fe,3,osteoarthritis of the knee
+a7624ac9-6308-e015-1c5c-115c97c631fe,4,viral sinusitis
+be86cb71-0481-f2c6-c89b-e8ea1136a893,0,viral sinusitis
+be86cb71-0481-f2c6-c89b-e8ea1136a893,1,acute bacterial sinusitis
+c518abbe-9695-1b3a-3173-305ff9bb6150,0,hypertension
+c518abbe-9695-1b3a-3173-305ff9bb6150,1,obesity
+c518abbe-9695-1b3a-3173-305ff9bb6150,2,chronic sinusitis
+c518abbe-9695-1b3a-3173-305ff9bb6150,3,sinus infection
+c518abbe-9695-1b3a-3173-305ff9bb6150,4,Escherichia coli urinary tract infection
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,0,acute bronchitis
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,1,sprain of wrist
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,2,concussion
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,3,chronic low back pain
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,0,prediabetes
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,1,anemia
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,2,hyperlipidemia
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,3,osteoarthritis of the hip
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,4,chronic low back pain
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,5,chronic neck pain
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,6,miscarriage in the first trimester
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,7,tubal pregnancy
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,0,acute bronchitis
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,1,anemia
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,2,concussion with no loss of consciousness
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,3,osteoporosis
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,4,colon polyp
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,5,prediabetes
+d1ac7006-362b-cc1d-d516-f11d65055473,0,Atrial Fibrillation
+d1ac7006-362b-cc1d-d516-f11d65055473,1,miscarriage
+d1ac7006-362b-cc1d-d516-f11d65055473,2,obesity
+d1ac7006-362b-cc1d-d516-f11d65055473,3,acute bronchitis
+d1ac7006-362b-cc1d-d516-f11d65055473,4,viral sinusitis
+d786f8d0-61de-9b30-54d3-9a8eb517da09,0,tubal pregnancy
+d786f8d0-61de-9b30-54d3-9a8eb517da09,1,prediabetes
+d786f8d0-61de-9b30-54d3-9a8eb517da09,2,anemia
+d786f8d0-61de-9b30-54d3-9a8eb517da09,3,viral sinusitis
+d92df2e8-3c36-b226-ac2f-0318da0327b8,0,concussion injury of brain
+d92df2e8-3c36-b226-ac2f-0318da0327b8,1,chronic low back pain
+d92df2e8-3c36-b226-ac2f-0318da0327b8,2,fibromyalgia
+d92df2e8-3c36-b226-ac2f-0318da0327b8,3,hypertension
+d92df2e8-3c36-b226-ac2f-0318da0327b8,4,acute bacterial sinusitis
+d92df2e8-3c36-b226-ac2f-0318da0327b8,5,acute bronchitis
+d92df2e8-3c36-b226-ac2f-0318da0327b8,6,viral sinusitis
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,0,chronic sinusitis
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,1,anemia
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,2,viral sinusitis
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,3,acute bronchitis
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,4,acute viral pharyngitis
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,5,streptococcal sore throat
+f49dace4-cb51-d640-468f-044ec67ed318,0,miscarriage
+f49dace4-cb51-d640-468f-044ec67ed318,1,acute bronchitis
+f49dace4-cb51-d640-468f-044ec67ed318,2,viral sinusitis
+f49dace4-cb51-d640-468f-044ec67ed318,3,hyperlipidemia
+f93c78a3-57b8-4858-cad5-e449f26e3857,0,fracture of clavicle
+f93c78a3-57b8-4858-cad5-e449f26e3857,1,acute viral pharyngitis
+f93c78a3-57b8-4858-cad5-e449f26e3857,2,acute bronchitis
+f93c78a3-57b8-4858-cad5-e449f26e3857,3,viral sinusitis
+f93c78a3-57b8-4858-cad5-e449f26e3857,4,Streptococcal sore throat
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,0,Acute viral pharyngitis
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,1,Obesity
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,2,Prediabetes
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,3,Miscarriage in first trimester
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,4,Chronic intractable migraine without aura
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,5,Chronic pain
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,6,Impacted molars
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,7,Drug overdose
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,8,Hyperlipidemia
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,9,Viral sinusitis
+fcca54e8-5abe-cd71-30a0-464f15368bea,0,viral sinusitis

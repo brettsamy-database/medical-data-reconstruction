@@ -1,11 +1,14 @@
-"""Étape 6 : reconstruction structurée depuis `note_text`.
+"""Reconstruction : relire la note clinique et en extraire un dossier structuré.
 
-Repris de la cellule 6) du notebook original.
+Le modèle ne voit que la note nettoyée, jamais le gold. On garde trois versions du résultat :
+- `recon_raw`     : le JSON tel que le modèle l'a renvoyé ;
+- `recon_clean`   : les listes nettoyées (puces, doublons, bruit), seule version utilisée pour les scores ;
+- `recon_clipped` : l'intersection exacte avec le gold, utile pour déboguer mais jamais scorée.
 
-Trois vues de la reconstruction :
-- `recon_raw`     : extraction brute renvoyée par le LLM
-- `recon_clean`   : reconstruction nettoyée, utilisée pour les scores
-- `recon_clipped` : vue stricte (overlap exact avec le gold), debug seulement
+Les données démographiques du gold sont recopiées dans `recon_clean` plutôt que
+celles extraites : on mesure la reconstruction des conditions et des prescriptions,
+et une erreur sur le nom pourrait mélanger deux patients dans les tables. Les
+valeurs extraites restent dans `recon_raw` et sont scorées à part.
 """
 
 from __future__ import annotations
@@ -15,23 +18,10 @@ import re
 from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
-from pydantic import BaseModel, Field
 
 from config import settings
-from src.llm import LLMResult, extract_first_json, get_llm, repair_json, try_load
-from src.utils import norm_text, read_json, write_json
-
-
-class Extracted(BaseModel):
-    # Extraction brute du LLM (scoring/debug uniquement).
-    # On ne fait PAS confiance aux données démographiques pour la reconstruction finale
-    # afin d'éviter les inversions entre patients.
-    patient_name: Optional[str] = None
-    date_of_birth: Optional[str] = None
-    gender: Optional[str] = None
-    conditions: List[str] = Field(default_factory=list)
-    medication_requests: List[str] = Field(default_factory=list)
-
+from src.llm import LLMResult, get_llm, load_json_lenient
+from src.utils import ensure_list, norm_text, read_json, write_json
 
 SCHEMA = {
     "patient_name": "string or null",
@@ -43,22 +33,19 @@ SCHEMA = {
 
 EMPTY_EXTRACTION = {"patient_name": None, "date_of_birth": None, "gender": None, "conditions": [], "medication_requests": []}
 
+# Un élément extrait de plus de 160 caractères est une phrase recopiée, pas un diagnostic.
+MAX_ITEM_CHARS = 160
+
+EXAMPLE_OUTPUT = {
+    "patient_name": "John Smith",
+    "date_of_birth": "1980-04-12",
+    "gender": "male",
+    "conditions": ["Hypertension", "Type 2 diabetes mellitus"],
+    "medication_requests": ["Lisinopril 10 MG Oral Tablet", "Metformin 500 MG Oral Tablet"],
+}
+
 
 def extraction_prompt(note_text: str) -> str:
-    example_output = {
-        "patient_name": "John Smith",
-        "date_of_birth": "1980-04-12",
-        "gender": "male",
-        "conditions": [
-            "Hypertension",
-            "Type 2 diabetes mellitus",
-        ],
-        "medication_requests": [
-            "Lisinopril 10 MG Oral Tablet",
-            "Metformin 500 MG Oral Tablet",
-        ],
-    }
-
     return f"""You are a clinical information extraction engine.
 
 Your task is to read ONE clinical note and return EXACTLY ONE valid JSON object.
@@ -128,7 +115,7 @@ Schema:
 {json.dumps(SCHEMA, ensure_ascii=False, indent=2)}
 
 Valid output example:
-{json.dumps(example_output, ensure_ascii=False, indent=2)}
+{json.dumps(EXAMPLE_OUTPUT, ensure_ascii=False, indent=2)}
 
 Clinical note:
 <note>
@@ -139,6 +126,7 @@ JSON:"""
 
 
 def fix_to_json(raw_text: str, llm=None) -> str:
+    """Deuxième chance : on renvoie au modèle sa réponse illisible en lui demandant de la convertir en JSON."""
     llm = llm or get_llm()
     fix_prompt = f"""Convert the text below into EXACTLY ONE valid JSON object.
 
@@ -172,157 +160,118 @@ JSON:"""
 
 
 def parse_llm_json(llm_text: str, retries: int = 1, llm=None) -> Optional[dict]:
-    """Parse la sortie LLM ; si échec et `retries > 0`, demande au LLM de corriger le JSON."""
-    js = extract_first_json(llm_text)
-    if js:
-        obj = try_load(js)
-        if obj is not None:
-            return obj
-        obj = try_load(repair_json(js))
-        if obj is not None:
-            return obj
+    """Lit le JSON de la réponse ; s'il est illisible, demande jusqu'à `retries` fois au modèle de le réparer."""
+    obj = load_json_lenient(llm_text)
+    if obj is not None:
+        return obj
     if retries > 0:
         llm = llm or get_llm()
         if llm.available():
-            fixed = fix_to_json(llm_text, llm=llm)
-            return parse_llm_json(fixed, retries=retries - 1, llm=llm)
+            return parse_llm_json(fix_to_json(llm_text, llm=llm), retries=retries - 1, llm=llm)
     return None
 
 
-def ensure_list(x) -> List[str]:
-    if isinstance(x, list):
-        return x
-    return []
+# =========================
+# Nettoyage des listes extraites
+# =========================
 
 
 def clean_extracted_item(v: str) -> str:
+    """Retire les puces et numéros que le modèle ajoute parfois (« - Asthma », « 2) Asthma »)."""
     s = str(v or "").strip()
     s = re.sub(r"^\s*[-*•]+\s*", "", s)
     s = re.sub(r"^\s*\d+[\.\)\-:]\s*", "", s)
     s = re.sub(r"\s+", " ", s)
-    s = s.strip(" \t\r\n,;")
-    return s
+    return s.strip(" \t\r\n,;")
+
+
+def _noise_rules() -> Tuple[List[str], set]:
+    """Règles de bruit dérivées de PREFILTER_DROP_SUBSTRINGS.
+
+    Une expression de plusieurs mots (« victim of ») est rejetée partout où elle
+    apparaît. Un mot seul (« stress ») n'est rejeté que s'il constitue tout
+    l'élément, pour ne pas jeter « Post-traumatic stress disorder ».
+    """
+    phrases = [norm_text(x) for x in settings.PREFILTER_DROP_SUBSTRINGS or [] if x]
+    return [x for x in phrases if " " in x], {x for x in phrases if " " not in x}
 
 
 def is_noisy_candidate(k: str, filter_noisy: bool) -> bool:
     if not filter_noisy or not settings.PREFILTER_ENABLED:
         return False
-
     if not k:
         return True
-
-    noisy_phrases = [norm_text(x) for x in (settings.PREFILTER_DROP_SUBSTRINGS or []) if x]
-    strong_multiword = [x for x in noisy_phrases if " " in x]
-    short_singletons = set([x for x in noisy_phrases if " " not in x])
-
-    # Les expressions de plusieurs mots sont filtrées par sous-chaîne.
-    if any(p in k for p in strong_multiword):
-        return True
-
-    # Les mots seuls ne sont filtrés que sur une entrée quasi identique.
-    if k in short_singletons:
-        return True
-
-    return False
+    multiword, singletons = _noise_rules()
+    return k in singletons or any(p in k for p in multiword)
 
 
 def postprocess_list(values: List[str], max_items: int, filter_noisy: bool) -> List[str]:
-    out = []
-    seen = set()
-
+    """Nettoie une liste extraite : puces, doublons, éléments vides ou aberrants, bruit SDOH, puis plafond."""
+    out, seen = [], set()
     for v in ensure_list(values):
         cleaned = clean_extracted_item(v)
         k = norm_text(cleaned)
-
-        if not k:
+        if len(k) <= 1 or len(k) > MAX_ITEM_CHARS or k in seen or is_noisy_candidate(k, filter_noisy):
             continue
-        if len(k) <= 1:
-            continue
-        if len(k) > 160:
-            continue
-        if is_noisy_candidate(k, filter_noisy):
-            continue
-        if k in seen:
-            continue
-
         seen.add(k)
         out.append(cleaned)
-
         if len(out) >= max_items:
             break
-
     return out
 
 
 def clip_to_gold(values: List[str], gold_values: List[str]) -> List[str]:
-    """Overlap exact normalisé avec la liste gold du patient. Debug seulement, pas utilisé pour le scoring."""
-    allowed = set([norm_text(x) for x in (gold_values or []) if x])
-    return [v for v in (values or []) if norm_text(v) in allowed]
+    allowed = {norm_text(x) for x in gold_values or [] if x}
+    return [v for v in values or [] if norm_text(v) in allowed]
 
 
 # =========================
-# Pipeline de reconstruction
+# Reconstruction
 # =========================
 
 
 def reconstruct_one(pid: str, note_text: str, gold: dict, llm=None) -> Tuple[dict, dict, dict]:
-    """Reconstruit un patient. Retourne (recon_raw, recon_clean, recon_clipped)."""
+    """Renvoie (recon_raw, recon_clean, recon_clipped) pour un patient."""
     llm = llm or get_llm()
+    note_text = (note_text or "").strip()
+    gold = gold or {}
+
     obj = None
     if llm.available():
-        try:
-            txt = llm.generate(
-                extraction_prompt((note_text or "").strip()),
-                max_new_tokens=settings.RECON_EXTRACTION_MAX_NEW_TOKENS,
-                temperature=settings.RECON_TEMPERATURE,
-                do_sample=settings.RECON_DO_SAMPLE,
-            )
-            obj = parse_llm_json(txt, retries=1, llm=llm)
-        except Exception:  # noqa: BLE001
-            obj = None
-
+        txt = llm.generate(
+            extraction_prompt(note_text),
+            max_new_tokens=settings.RECON_EXTRACTION_MAX_NEW_TOKENS,
+            temperature=settings.RECON_TEMPERATURE,
+            do_sample=settings.RECON_DO_SAMPLE,
+        )
+        obj = parse_llm_json(txt, retries=1, llm=llm)
     if not isinstance(obj, dict):
         obj = dict(EMPTY_EXTRACTION)
 
-    obj.setdefault("patient_name", None)
-    obj.setdefault("date_of_birth", None)
-    obj.setdefault("gender", None)
+    for key in ("patient_name", "date_of_birth", "gender"):
+        obj.setdefault(key, None)
     obj["conditions"] = ensure_list(obj.get("conditions"))
     obj["medication_requests"] = ensure_list(obj.get("medication_requests"))
 
-    gold = gold or {}
+    cond = postprocess_list(obj["conditions"], settings.MAX_CONDITIONS_PER_PATIENT, filter_noisy=True)
+    meds = postprocess_list(obj["medication_requests"], settings.MAX_MEDICATION_REQUESTS_PER_PATIENT, filter_noisy=False)
 
-    cond_clean = postprocess_list(obj.get("conditions") or [], settings.MAX_CONDITIONS_PER_PATIENT, filter_noisy=True)
-    medr_clean = postprocess_list(obj.get("medication_requests") or [], settings.MAX_MEDICATION_REQUESTS_PER_PATIENT, filter_noisy=False)
-
-    cond_clipped = clip_to_gold(cond_clean, gold.get("conditions", []))
-    medr_clipped = clip_to_gold(medr_clean, gold.get("medication_requests", []))
-
-    recon_clean = {
-        "note_used_for_extraction": (note_text or "").strip(),
+    demographics = {
         "patient_id": pid,
         "full_name": gold.get("full_name"),
         "birthDate": gold.get("birthDate"),
         "gender": gold.get("gender"),
-        "conditions": cond_clean,
-        "medication_requests": medr_clean,
     }
-    recon_clipped = {
-        "patient_id": pid,
-        "full_name": gold.get("full_name"),
-        "birthDate": gold.get("birthDate"),
-        "gender": gold.get("gender"),
-        "conditions": cond_clipped,
-        "medication_requests": medr_clipped,
-    }
+    recon_clean = {"note_used_for_extraction": note_text, **demographics,
+                   "conditions": cond, "medication_requests": meds}
+    recon_clipped = {**demographics,
+                     "conditions": clip_to_gold(cond, gold.get("conditions", [])),
+                     "medication_requests": clip_to_gold(meds, gold.get("medication_requests", []))}
     return obj, recon_clean, recon_clipped
 
 
 def reconstruct_all(patients: List[dict], notes: Dict[str, LLMResult], llm=None) -> Tuple[Dict[str, dict], Dict[str, dict], Dict[str, dict]]:
-    """Reconstruit tous les patients et écrit les 3 vues dans data/processed/reconstruction/."""
-    settings.RECON_DIR.mkdir(parents=True, exist_ok=True)
     gold_by_pid = {p["patient_id"]: p for p in patients}
-
     recon_raw: Dict[str, dict] = {}
     recon_clean: Dict[str, dict] = {}
     recon_clipped: Dict[str, dict] = {}
@@ -337,16 +286,17 @@ def reconstruct_all(patients: List[dict], notes: Dict[str, LLMResult], llm=None)
     return recon_raw, recon_clean, recon_clipped
 
 
+def _is_main_recon_file(p) -> bool:
+    return not (p.name.endswith(".raw.json") or p.name.endswith(".clipped.json"))
+
+
 def load_reconstructions() -> Tuple[Dict[str, dict], Dict[str, dict], Dict[str, dict]]:
-    """Relit les reconstructions depuis data/processed/reconstruction/."""
     recon_raw: Dict[str, dict] = {}
     recon_clean: Dict[str, dict] = {}
     recon_clipped: Dict[str, dict] = {}
     if not settings.RECON_DIR.exists():
         return recon_raw, recon_clean, recon_clipped
-    for p in sorted(settings.RECON_DIR.glob("*.json")):
-        if p.name.endswith(".raw.json") or p.name.endswith(".clipped.json"):
-            continue
+    for p in sorted(filter(_is_main_recon_file, settings.RECON_DIR.glob("*.json"))):
         pid = p.stem
         recon_clean[pid] = read_json(p)
         raw_path = settings.RECON_DIR / f"{pid}.raw.json"
@@ -359,10 +309,10 @@ def load_reconstructions() -> Tuple[Dict[str, dict], Dict[str, dict], Dict[str, 
 def recon_dataframe(recon_raw: Dict[str, dict], recon_clean: Dict[str, dict], recon_clipped: Dict[str, dict]) -> pd.DataFrame:
     n = settings.PREVIEW_N
     rows = []
-    for pid in sorted(recon_clean.keys()):
+    for pid in sorted(recon_clean):
         clean = recon_clean[pid]
-        clipped = recon_clipped.get(pid, {}) or {}
-        raw = recon_raw.get(pid, {}) or {}
+        clipped = recon_clipped.get(pid) or {}
+        raw = recon_raw.get(pid) or {}
         rows.append({
             "patient_id": pid,
             "full_name": clean.get("full_name"),

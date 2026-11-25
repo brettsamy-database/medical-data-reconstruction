@@ -1,27 +1,80 @@
 {
-  "patient_id": "9055bf8d-a995-d068-a3e0-666a002b5683",
-  "given": "Manuela585",
-  "family": "Villalpando154",
-  "full_name": "Manuela585 Villalpando154",
-  "birthDate": "2010-11-12",
+  "patient_id": "0f444cf3-eb58-6f42-c740-a6ab70cec7ee",
+  "given": "Genny123",
+  "family": "Rath779",
+  "full_name": "Genny123 Rath779",
+  "birthDate": "1955-02-23",
   "gender": "female",
   "conditions_candidates": [
     {
       "system": "http://snomed.info/sct",
-      "code": "65363002",
-      "display": "Otitis media"
+      "code": "162864005",
+      "display": "Body mass index 30+ - obesity (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "15777000",
+      "display": "Prediabetes"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "271737000",
+      "display": "Anemia (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "446654005",
+      "display": "Refugee (person)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "444814009",
+      "display": "Viral sinusitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "195662009",
+      "display": "Acute viral pharyngitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "278860009",
+      "display": "Chronic low back pain (finding)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "75498004",
+      "display": "Acute bacterial sinusitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "40055000",
+      "display": "Chronic sinusitis (disorder)"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "64859006",
+      "display": "Osteoporosis (disorder)"
     }
   ],
   "conditions": [
-    "Otitis media"
+    "Anemia (disorder)",
+    "Acute bacterial sinusitis (disorder)",
+    "Chronic sinusitis (disorder)",
+    "Osteoporosis (disorder)"
   ],
   "medication_requests": [
-    "Cefuroxime 250 MG Oral Tablet",
-    "Ibuprofen 100 MG Oral Tablet"
+    "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+    "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule",
+    "Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]",
+    "Alendronic acid 10 MG Oral Tablet"
   ],
   "conditions_llm": [
-    "Otitis media"
+    "Anemia (disorder)",
+    "Acute bacterial sinusitis (disorder)",
+    "Chronic sinusitis (disorder)",
+    "Osteoporosis (disorder)"
   ],
-  "note_style": "health_check_summary",
-  "note_style_label": "Health check summary"
+  "note_style": "medical_history_note",
+  "note_style_label": "Medical history note"
 }

@@ -3,7 +3,6 @@ pandas>=2.0
 matplotlib>=3.7
 requests>=2.31
 tqdm>=4.66
-pydantic>=2.0
 
 # Modèle MedGemma (google/medgemma-4b-it) via Hugging Face
 torch

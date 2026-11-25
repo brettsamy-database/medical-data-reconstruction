@@ -1,42 +1,20 @@
-# Examples
+# Exemples patients
 
-Ce dossier contient quelques exemples patients permettant de suivre la pipeline complète de bout en bout :
+Les scores moyens ne montrent pas *comment* le pipeline réussit ou échoue. Ces trois patients, tirés du benchmark, le montrent sur des cas concrets :
 
-**filtered -> gold -> note -> reconstruction -> score -> vérification -> analyse des erreurs**
+| Dossier | Style de note | Ce qu'il illustre |
+|---|---|---|
+| [patient_01](patient_01/) | Note télégraphique | Un cas presque parfait |
+| [patient_02](patient_02/) | Antécédents médicaux | Score exact à 0, score sémantique à 1 : le piège des reformulations |
+| [patient_03](patient_03/) | Consultation courte | Un cas difficile, où l'information se perd à deux endroits |
 
-## Objectif
+Chaque dossier suit le pipeline dans l'ordre :
 
-Ces exemples servent à illustrer concrètement le fonctionnement du projet sur des cas individuels.
-
-Ils permettent de relier :
-- les résultats globaux du benchmark,
-- la logique du pipeline,
-- et des cas patients réels issus de l'expérience.
-
-## Contenu attendu par patient
-
-Chaque sous-dossier patient contient :
-
-- `01_filtered.json`
-- `02_gold.json`
-- `03_note.txt`
-- `04_reconstruction.json`
-- `05_score_and_07_errors.json`
-- `06_verification.json`
-- `README.md`
-
-## Remarque
-
-Dans cette version du dépôt, les informations de **score** et de **errors** sont regroupées dans un même fichier :
-- `05_score_and_07_errors.json`
-
-Cela permet de garder un exemple patient compact tout en conservant les deux niveaux de lecture :
-- les métriques quantitatives,
-- l'interprétation qualitative des erreurs.
-
-## Utilité
-
-Ce sous-dossier est particulièrement utile pour :
-- comprendre le projet sans lire uniquement des tables agrégées,
-- montrer des cas concrets dans une soutenance,
-- illustrer visuellement la chaîne complète de traitement.
+| Fichier | Contenu |
+|---|---|
+| `01_filtered.json` | Le dossier FHIR après filtrage |
+| `02_gold.json` | La gold source : ce qu'on cherche à retrouver |
+| `03_note.txt` | La note clinique générée par MedGemma |
+| `04_reconstruction.json` | Ce que MedGemma a extrait de la note |
+| `05_score_and_07_errors.json` | Les scores et la classification des erreurs |
+| `06_verification.json` | Le verdict de la vérification |

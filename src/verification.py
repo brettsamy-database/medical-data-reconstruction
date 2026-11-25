@@ -1,12 +1,14 @@
-"""Étape 8 : chaîne de vérification LLM (note nettoyée + reconstruction -> verdict).
+"""Vérification : une relecture critique de chaque reconstruction par le LLM.
 
-Repris de la cellule 8) du notebook original. Ne remplace pas les scores :
-ajoute une relecture critique automatique.
+Les scores comparent des listes élément par élément. La vérification pose une
+question plus globale : « cette reconstruction est-elle fidèle à la note ? ».
+Elle complète les scores sans les remplacer. Comme c'est le même modèle qui a
+produit la reconstruction, son verdict est à prendre avec recul : il a tendance
+à être indulgent.
 """
 
 from __future__ import annotations
 
-import hashlib
 import json
 from typing import Dict, List, Tuple
 
@@ -15,7 +17,7 @@ import pandas as pd
 from config import settings
 from src.llm import LLMResult, get_llm
 from src.reconstruction import parse_llm_json, postprocess_list
-from src.utils import write_json
+from src.utils import ensure_list, read_cached, signature, write_json
 
 VERIFICATION_SCHEMA = {
     "verdict": "consistent|minor_issues|major_issues|unknown",
@@ -34,12 +36,17 @@ ISSUE_KEYS = [
     "missing_medication_requests_from_reconstruction",
 ]
 
+MAX_ISSUES_PER_LIST = 100
 
-def verification_prompt(note_text: str, recon_clean_obj: dict) -> str:
-    payload = {
+
+def _recon_payload(recon_clean_obj: dict) -> dict:
+    return {
         "conditions": recon_clean_obj.get("conditions", []),
         "medication_requests": recon_clean_obj.get("medication_requests", []),
     }
+
+
+def verification_prompt(note_text: str, recon_clean_obj: dict) -> str:
     return f"""You are verifying whether a structured reconstruction is faithfully supported by a clinical note.
 
 Task:
@@ -68,7 +75,7 @@ Clinical note:
 
 Structured reconstruction:
 <reconstruction>
-{json.dumps(payload, ensure_ascii=False, indent=2)}
+{json.dumps(_recon_payload(recon_clean_obj), ensure_ascii=False, indent=2)}
 </reconstruction>
 
 JSON:"""
@@ -76,27 +83,16 @@ JSON:"""
 
 def verify_reconstruction(pid: str, note_text: str, recon_clean_obj: dict, llm=None) -> dict:
     llm = llm or get_llm()
-    signature_payload = {
-        "note_text": note_text or "",
-        "recon": {
-            "conditions": recon_clean_obj.get("conditions", []),
-            "medication_requests": recon_clean_obj.get("medication_requests", []),
-        },
-    }
-    signature = hashlib.sha256(json.dumps(signature_payload, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
-
+    sig = signature({"note_text": note_text or "", "recon": _recon_payload(recon_clean_obj)})
     cache_path = settings.VERIFICATION_DIR / f"{pid}.json"
-    if cache_path.exists():
-        try:
-            cached = json.loads(cache_path.read_text(encoding="utf-8"))
-            if cached.get("signature") == signature:
-                return cached
-        except Exception:  # noqa: BLE001
-            pass
+    cached = read_cached(cache_path, sig)
+    if cached:
+        return cached
 
+    # Sans réponse exploitable du modèle, le verdict reste « unknown » avec une confiance nulle.
     out = {
         "patient_id": pid,
-        "signature": signature,
+        "signature": sig,
         "verdict": "unknown",
         "confidence": 0.0,
         **{k: [] for k in ISSUE_KEYS},
@@ -114,11 +110,10 @@ def verify_reconstruction(pid: str, note_text: str, recon_clean_obj: dict, llm=N
         out["verdict"] = str(obj.get("verdict", "unknown")).strip() or "unknown"
         try:
             out["confidence"] = float(obj.get("confidence", 0.0))
-        except Exception:  # noqa: BLE001
+        except (TypeError, ValueError):
             out["confidence"] = 0.0
         for key in ISSUE_KEYS:
-            val = obj.get(key, [])
-            out[key] = postprocess_list(val if isinstance(val, list) else [], 100, filter_noisy=("condition" in key))
+            out[key] = postprocess_list(ensure_list(obj.get(key)), MAX_ISSUES_PER_LIST, filter_noisy=("condition" in key))
         out["summary"] = str(obj.get("summary", "")).strip()
 
     write_json(cache_path, out)
@@ -126,18 +121,19 @@ def verify_reconstruction(pid: str, note_text: str, recon_clean_obj: dict, llm=N
 
 
 def verification_row(review: dict, gold_obj: dict) -> dict:
-    unsupported_total = len(review["unsupported_conditions"]) + len(review["unsupported_medication_requests"])
-    missing_total = len(review["missing_conditions_from_reconstruction"]) + len(review["missing_medication_requests_from_reconstruction"])
+    n = {k: len(review[k]) for k in ISSUE_KEYS}
+    unsupported_total = n["unsupported_conditions"] + n["unsupported_medication_requests"]
+    missing_total = n["missing_conditions_from_reconstruction"] + n["missing_medication_requests_from_reconstruction"]
     return {
         "patient_id": review["patient_id"],
         "note_style": gold_obj.get("note_style"),
         "note_style_label": gold_obj.get("note_style_label"),
         "verification_verdict": review["verdict"],
         "verification_confidence": float(review["confidence"]),
-        "verification_unsupported_conditions_n": len(review["unsupported_conditions"]),
-        "verification_missing_conditions_n": len(review["missing_conditions_from_reconstruction"]),
-        "verification_unsupported_medication_requests_n": len(review["unsupported_medication_requests"]),
-        "verification_missing_medication_requests_n": len(review["missing_medication_requests_from_reconstruction"]),
+        "verification_unsupported_conditions_n": n["unsupported_conditions"],
+        "verification_missing_conditions_n": n["missing_conditions_from_reconstruction"],
+        "verification_unsupported_medication_requests_n": n["unsupported_medication_requests"],
+        "verification_missing_medication_requests_n": n["missing_medication_requests_from_reconstruction"],
         "verification_unsupported_total_n": unsupported_total,
         "verification_missing_total_n": missing_total,
         "verification_issue_total_n": unsupported_total + missing_total,
@@ -163,16 +159,13 @@ def verification_by_note_style(df_verification: pd.DataFrame) -> pd.DataFrame:
 
 def run_verification(patients: List[dict], recon_clean: Dict[str, dict], notes: Dict[str, LLMResult],
                      llm=None) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Vérifie chaque patient. Retourne (df_verification, df_verification_by_note_style) et écrit les CSV."""
-    settings.VERIFICATION_DIR.mkdir(parents=True, exist_ok=True)
+    """Vérifie chaque patient. Renvoie (df_verification, df_verification_by_note_style) et écrit les CSV."""
     gold_by_pid = {p["patient_id"]: p for p in patients}
-
     rows = []
-    for pid in sorted(recon_clean.keys()):
-        note_obj = notes.get(pid)
-        note_text = (note_obj.note if note_obj else "") or ""
-        review = verify_reconstruction(pid, note_text, recon_clean.get(pid, {}) or {}, llm=llm)
-        rows.append(verification_row(review, gold_by_pid.get(pid, {}) or {}))
+    for pid in sorted(recon_clean):
+        note_text = notes[pid].note if pid in notes else ""
+        review = verify_reconstruction(pid, note_text or "", recon_clean.get(pid) or {}, llm=llm)
+        rows.append(verification_row(review, gold_by_pid.get(pid) or {}))
 
     df_verification = pd.DataFrame(rows)
     if df_verification.empty:

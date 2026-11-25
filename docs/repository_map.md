@@ -1,61 +1,27 @@
-# Carte du dépôt
+# Organisation du dépôt
 
-## Racine
+```text
+config/settings.py       tous les paramètres : chemins, modèle, échantillon, filtres, plafonds, tokens, températures
+src/
+  utils.py               normalisation de texte, JSON sur disque, signatures de cache
+  llm.py                 chargement de MedGemma, arrêt de génération sur JSON, lecture tolérante du JSON
+  fhir.py                téléchargement Synthea, préfiltre, échantillon
+  gold.py                tri des conditions par le LLM → gold source
+  notes.py               styles, prompt de note, nettoyage des sorties
+  reconstruction.py      prompt d'extraction, réparation du JSON, nettoyage des listes
+  evaluation.py          métriques exactes et sémantiques, analyse des erreurs, synthèses
+  verification.py        relecture globale par le LLM
+  export.py              tables finales depuis le disque, publication dans results/
+  plots.py               figures de assets/figures/
+notebooks/               les trois étapes à lancer dans l'ordre
+tests/                   tests pytest, avec un faux LLM (aucun GPU nécessaire)
+results/                 résultats publiés : CSV et exemples patients
+assets/figures/          figures du README et de la documentation
+docs/                    cette documentation
+data/                    données de travail, non versionnées (régénérables)
+  raw/                   archive et bundles Synthea
+  processed/             bundles filtrés, notes, reconstructions, scores, caches LLM, exports
+  gold_standard/         gold source, un JSON par patient
+```
 
-- `README.md` : page d'accueil du projet
-- `requirements.txt` : dépendances (MedGemma via `transformers` / `torch`)
-- `.env.example` : modèle du fichier `.env` qui contient `HF_TOKEN` (le `.env` n'est jamais versionné)
-- `.gitignore` : exclut `data/`, `.venv/`, `.env`, caches
-
-## `config/`
-
-- `settings.py` : chemins, modèle, taille de l'échantillon, règles de préfiltrage, plafonds, budgets de tokens, températures
-
-## `src/`
-
-| Module | Rôle |
-|---|---|
-| `utils.py` | normalisation de texte, lecture/écriture JSON |
-| `fhir.py` | téléchargement Synthea, préfiltrage, extraction patient, échantillon |
-| `llm.py` | MedGemma, authentification Hugging Face, parsing JSON des sorties LLM |
-| `gold.py` | filtre LLM des conditions, écriture/lecture du gold source |
-| `notes.py` | styles de notes, prompts, génération, nettoyage |
-| `reconstruction.py` | prompt d'extraction, parsing, post-traitement, 3 vues de reconstruction |
-| `evaluation.py` | métriques exactes et sémantiques, analyse des erreurs, synthèses |
-| `verification.py` | vérification LLM de cohérence note / reconstruction |
-| `export.py` | reset, reconstruction des datasets depuis le cache, exports, publication dans `results/` |
-| `plots.py` | figures de `assets/figures/` |
-
-## `notebooks/`
-
-- `01_fhir_exploration.ipynb`, `02_note_generation.ipynb`, `03_benchmark_results.ipynb` (voir le [guide des notebooks](notebook_guide.md))
-
-## `tests/`
-
-Tests `pytest` de chaque module, avec un faux LLM (aucun GPU nécessaire).
-
-## `data/` (non versionné)
-
-- `raw/` : zip et bundles Synthea extraits
-- `processed/` : bundles filtrés, notes, reconstructions, scores, vérification, caches LLM, exports
-- `gold_standard/` : gold source, un JSON par patient
-
-## `results/` (versionné)
-
-- `intermediates/` : source structurée, notes, reconstruction
-- `summaries/` : métriques, erreurs, vérification
-- `other_results/` : tables longues, index, revue des exports
-- `examples/` : 3 patients suivis de bout en bout
-
-## `docs/` et `assets/figures/`
-
-Documentation Markdown et figures du benchmark.
-
-## Parcours conseillé
-
-1. `README.md`
-2. `docs/project_overview.md`
-3. `docs/pipeline_explained.md`
-4. `docs/results_guide.md`
-5. `results/summaries/`
-6. `results/examples/`
+Les modules suivent l'ordre du pipeline, et chacun ne dépend que des précédents. `evaluation.py` réutilise par exemple le nettoyage de `reconstruction.py`, pour que le gold et la reconstruction soient normalisés de la même façon avant comparaison.

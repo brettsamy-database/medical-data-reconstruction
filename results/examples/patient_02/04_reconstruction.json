@@ -1,12 +1,19 @@
 {
-  "patient_name": "Manuela585 Villalpando154",
-  "date_of_birth": "2010-11-12",
+  "note_used_for_extraction": "Genny123 Rath779, a female born on 1955-02-23, has a history of anemia, acute bacterial sinusitis, chronic sinusitis, and osteoporosis. She is currently on Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet, 12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule, Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet], and Alendronic acid 10 MG Oral Tablet.",
+  "patient_id": "0f444cf3-eb58-6f42-c740-a6ab70cec7ee",
+  "full_name": "Genny123 Rath779",
+  "birthDate": "1955-02-23",
   "gender": "female",
   "conditions": [
-    "otitis media"
+    "anemia",
+    "acute bacterial sinusitis",
+    "chronic sinusitis",
+    "osteoporosis"
   ],
   "medication_requests": [
-    "Cefuroxime 250 MG Oral Tablet",
-    "Ibuprofen 100 MG Oral Tablet"
+    "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+    "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule",
+    "Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]",
+    "Alendronic acid 10 MG Oral Tablet"
   ]
 }

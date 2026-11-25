@@ -39,7 +39,7 @@ def test_exact_items_supported_by_note():
     (dict(gold_n=3, pred_n=3, f1_exact=0.5, f1_semantic=0.6, note_f1=0.95), "source_to_note_gap_or_generation_loss"),
 ])
 def test_classify_error_type(kwargs, expected):
-    base = dict(note_precision=1, note_recall=1, fp_semantic=0, fn_semantic=0, note_unsupported_n=0, note_missing_n=0)
+    base = dict(fp_semantic=0, fn_semantic=0, note_unsupported_n=0, note_missing_n=0)
     out = ev.classify_error_type(**base, **kwargs)
     assert out["overall"] == expected
     assert set(out) == {"overall", "stage", "severity", "explanation"}

@@ -1,17 +1,22 @@
 {
-  "patient_name": "German382 Trantow673",
-  "date_of_birth": "1961-08-10",
-  "gender": "male",
+  "note_used_for_extraction": "Geri861 Padberg411, 1944-11-18, female today. Acute viral pharyngitis. Body mass index 30+ - obesity. Prediabetes. Miscarriage in first trimester. Chronic intractable migraine without aura. Chronic pain. Impacted molars. Drug overdose. Hyperlipidemia. Viral sinusitis. Simvastatin 10 MG Oral Tablet.",
+  "patient_id": "f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0",
+  "full_name": "Geri861 Padberg411",
+  "birthDate": "1944-11-18",
+  "gender": "female",
   "conditions": [
-    "Hypertension",
+    "Acute viral pharyngitis",
+    "Obesity",
+    "Prediabetes",
+    "Miscarriage in first trimester",
+    "Chronic intractable migraine without aura",
+    "Chronic pain",
+    "Impacted molars",
+    "Drug overdose",
     "Hyperlipidemia",
-    "Obesity"
+    "Viral sinusitis"
   ],
   "medication_requests": [
-    "hydrochlorothiazide 25 MG Oral Tablet",
-    "lisinopril 10 MG Oral Tablet",
-    "Simvastatin 10 MG Oral Tablet",
-    "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
-    "Acetaminophen 325 MG Oral Tablet"
+    "Simvastatin 10 MG Oral Tablet"
   ]
 }

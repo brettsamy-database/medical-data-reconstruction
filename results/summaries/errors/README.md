@@ -1,39 +1,10 @@
-# Errors
+# Analyse des erreurs
 
-Ce dossier contient l'analyse qualitative des erreurs du benchmark.
+| Fichier | Contenu |
+|---|---|
+| `df_error_analysis.csv` | pour chaque patient, et séparément pour les conditions et les prescriptions : type d'erreur, étape fautive, sévérité et chiffres à l'appui |
+| `df_error_types_by_note_style_conditions.csv` | nombre de patients par type d'erreur et par style, pour les conditions |
+| `df_error_types_by_note_style_medication_requests.csv` | idem pour les prescriptions |
+| `df_hard_cases_by_note_style.csv` | les 3 patients au plus faible score de difficulté de chaque style |
 
-## Contenu
-
-- `df_error_analysis.csv` : taxonomie globale des erreurs
-- `df_error_types_by_note_style_conditions.csv` : analyse des erreurs sur les conditions par style de note
-- `df_error_types_by_note_style_medication_requests.csv` : analyse des erreurs sur les medication requests par style de note
-- `df_hard_cases_by_note_style.csv` : cas difficiles identifiés par style de note
-
-## Objectif
-
-Ces fichiers permettent de répondre à une question différente des métriques :
-
-> Le pipeline se trompe, mais de quelle manière ?
-
-## Rôle des fichiers
-
-### `df_error_analysis.csv`
-Vue globale des catégories d'erreurs observées sur le benchmark.
-
-### `df_error_types_by_note_style_conditions.csv`
-Analyse des erreurs sur les conditions, en fonction du style de note.
-
-### `df_error_types_by_note_style_medication_requests.csv`
-Analyse des erreurs sur les medication requests, en fonction du style de note.
-
-### `df_hard_cases_by_note_style.csv`
-Table des cas difficiles, utile pour identifier les patients ou styles qui concentrent les plus gros écarts.
-
-## Utilisation conseillée
-
-Ce sous-dossier est particulièrement utile pour :
-
-- comprendre les limites du pipeline,
-- préparer une restitution orale,
-- identifier les axes d'amélioration futurs,
-- illustrer les différences entre styles de note.
+Les règles de classement sont expliquées dans le [guide des résultats](../../../docs/results_guide.md#analyse-des-erreurs).

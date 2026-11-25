@@ -1,19 +1,16 @@
 {
-  "patient_name": "Nita296 McLaughlin530",
-  "date_of_birth": "1932-09-18",
+  "note_used_for_extraction": "Louis204 Wintheiser220 is a female patient born on 2010-09-18. She presents today with complaints of a sore throat, runny nose, and cough. Her mother reports that the symptoms started 2 days ago. Louis204 Wintheiser220 also has a history of child attention deficit disorder. I suspect acute viral pharyngitis, viral sinusitis, and acute bronchitis. Her temperature is 37.8 C. I am considering prescribing Acetaminophen 325 MG Oral Tablet and Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution. Given the potential for Streptococcus, I am also considering Amoxicillin 500 MG Oral Tablet. I have also requested Ibuprofen 100 MG Oral Tablet.",
+  "patient_id": "5fe0db77-0fe4-4472-ce22-b6e860ec103a",
+  "full_name": "Louis204 Wintheiser220",
+  "birthDate": "2010-09-18",
   "gender": "female",
   "conditions": [
-    "miscarriage",
-    "atrial fibrillation",
-    "acute bronchitis",
-    "viral sinusitis",
-    "sprain of ankle"
+    "child attention deficit disorder"
   ],
   "medication_requests": [
-    "120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler NDA020503",
-    "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler Warfarin Sodium 5 MG Oral Tablet",
-    "Verapamil Hydrochloride 40 MG",
-    "Digoxin 0.125 MG Oral Tablet",
-    "Acetaminophen 21.7 MG/ML"
+    "Acetaminophen 325 MG Oral Tablet",
+    "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+    "Amoxicillin 500 MG Oral Tablet",
+    "Ibuprofen 100 MG Oral Tablet"
   ]
 }

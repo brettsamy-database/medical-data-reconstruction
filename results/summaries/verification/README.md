@@ -1,28 +1,5 @@
-# Verification
+# Vérification
 
-Ce dossier contient les résultats de la chaîne de vérification LLM.
+`df_verification.csv` contient, pour chaque patient, le verdict du modèle (`consistent`, `minor_issues`, `major_issues` ou `unknown`), sa confiance, le nombre d'éléments qu'il juge non justifiés ou manquants, et un résumé en une phrase.
 
-## Contenu
-
-- `df_verification.csv` : verdicts de vérification patient par patient
-
-## Rôle de la vérification
-
-La vérification ajoute une couche supplémentaire de relecture automatique.
-
-Elle ne remplace pas les scores.
-Elle sert à évaluer si la reconstruction semble cohérente avec la note générée.
-
-## Ce que ce fichier permet de voir
-
-- les verdicts de cohérence,
-- la confiance associée,
-- les patients qui paraissent plus fragiles ou plus ambigus.
-
-## Utilisation conseillée
-
-Ce fichier est utile pour :
-
-- compléter la lecture des scores,
-- repérer des cas discutables,
-- enrichir l'analyse des résultats au-delà des seules métriques numériques.
+À lire avec recul : c'est le même modèle qui a produit la reconstruction, et il se montre indulgent (37 `consistent` sur 40, y compris des cas où il liste lui-même des problèmes). Voir le [rapport du benchmark](../../../docs/benchmark_report.md#vérification).

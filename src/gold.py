@@ -1,8 +1,9 @@
-"""Étape 4 : finaliser le `gold_source` avec un filtre LLM sur les conditions.
+"""Gold source : la version de référence du dossier patient, celle que la reconstruction doit retrouver.
 
-Repris de la cellule 4D) du notebook original. Le gold source est la
-référence structurée utilisée pour générer les notes et pour le scoring
-« source vs recon ».
+Après le préfiltre déterministe, certaines conditions restent ambiguës (« Stress »,
+« Received higher education »…). On demande au LLM de trier la liste candidate de
+chaque patient. Pour limiter le risque, il ne peut que choisir des index dans la
+liste, jamais ajouter ou reformuler un élément, et on garde tout en cas de doute.
 """
 
 from __future__ import annotations
@@ -25,14 +26,10 @@ FILTER_SCHEMA = {
 
 
 def filter_prompt(candidates: List[dict]) -> str:
-    lines = []
-    for i, c in enumerate(candidates):
-        sys_ = c.get("system") or ""
-        code = c.get("code") or ""
-        disp = c.get("display") or ""
-        lines.append(f"{i}. [{sys_}|{code}] {disp}")
-    items_txt = "\n".join(lines) if lines else ""
-
+    items_txt = "\n".join(
+        f"{i}. [{c.get('system') or ''}|{c.get('code') or ''}] {c.get('display') or ''}"
+        for i, c in enumerate(candidates)
+    )
     return f"""You are validating patient FHIR Conditions from synthetic data.
 
 Goal:
@@ -55,47 +52,8 @@ Condition candidates:
 JSON:"""
 
 
-def llm_keep_condition_indexes(patient_id: str, candidates: List[dict], llm=None) -> List[int]:
-    """Renvoie les index à garder (conditions médicales uniquement). Cache disque. Ne lève jamais."""
-    llm = llm or get_llm()
-    settings.FILTER_CACHE_DIR.mkdir(parents=True, exist_ok=True)
-
-    key_payload = {
-        "patient_id": patient_id,
-        "candidates": [{"system": c.get("system"), "code": c.get("code"), "display": c.get("display")} for c in candidates],
-    }
-    key_str = json.dumps(key_payload, ensure_ascii=False, sort_keys=True)
-    cache_id = hashlib.sha1(key_str.encode("utf-8")).hexdigest()[:16]
-    cache_path = settings.FILTER_CACHE_DIR / f"llm_keepidx_{patient_id}_{cache_id}.json"
-    if cache_path.exists():
-        obj = safe_read_json(cache_path)
-        if obj and isinstance(obj.get("keep_indexes"), list):
-            return [int(x) for x in obj["keep_indexes"] if str(x).isdigit()]
-
-    # Sans LLM : on garde tout
-    if not (settings.USE_LLM_PATIENT_FILTER and llm.available()):
-        keep = list(range(len(candidates)))
-        write_json(cache_path, {"keep_indexes": keep, "mode": "no_llm"})
-        return keep
-
-    raw = ""
-    try:
-        raw = llm.generate(
-            filter_prompt(candidates),
-            max_new_tokens=settings.LLM_FILTER_MAX_NEW_TOKENS,
-            temperature=settings.LLM_FILTER_TEMPERATURE,
-            do_sample=settings.LLM_FILTER_DO_SAMPLE,
-        )
-    except Exception:  # noqa: BLE001
-        keep = list(range(len(candidates)))
-        write_json(cache_path, {"keep_indexes": keep, "mode": "llm_error"})
-        return keep
-
-    obj = load_json_lenient(raw)
-
-    # Une relance avec un prompt de correction si besoin
-    if obj is None and settings.LLM_FILTER_RETRIES > 0:
-        fix_prompt = f"""Return ONLY valid JSON matching this schema:
+def fix_prompt(raw: str) -> str:
+    return f"""Return ONLY valid JSON matching this schema:
 {json.dumps(FILTER_SCHEMA, indent=2)}
 
 Convert the following text to valid JSON. Do not add commentary.
@@ -103,72 +61,96 @@ Text:
 {raw}
 
 JSON:"""
+
+
+def _parse_keep_indexes(obj, n_candidates: int) -> List[int]:
+    if not isinstance(obj, dict) or not isinstance(obj.get("keep_indexes"), list):
+        return []
+    keep = []
+    for x in obj["keep_indexes"]:
         try:
-            fixed = llm.generate(
-                fix_prompt,
-                max_new_tokens=settings.LLM_FILTER_MAX_NEW_TOKENS,
-                temperature=0.0,
-                do_sample=False,
-            )
-            obj = load_json_lenient(fixed)
-        except Exception:  # noqa: BLE001
-            obj = None
+            ix = int(x)
+        except (TypeError, ValueError):
+            continue
+        if 0 <= ix < n_candidates:
+            keep.append(ix)
+    return sorted(set(keep))
 
-    keep_indexes: List[int] = []
-    if isinstance(obj, dict) and isinstance(obj.get("keep_indexes"), list):
-        for x in obj["keep_indexes"]:
-            try:
-                ix = int(x)
-                if 0 <= ix < len(candidates):
-                    keep_indexes.append(ix)
-            except Exception:  # noqa: BLE001
-                continue
 
-    # Sécurité : si vide ou invalide, on garde tout
-    if not keep_indexes:
-        keep_indexes = list(range(len(candidates)))
+def llm_keep_condition_indexes(patient_id: str, candidates: List[dict], llm=None) -> List[int]:
+    """Renvoie les index des conditions à garder. Si le LLM ne répond rien d'exploitable, on garde tout."""
+    llm = llm or get_llm()
+    keep_all = list(range(len(candidates)))
 
-    keep_indexes = sorted(set(keep_indexes))
-    write_json(cache_path, {"keep_indexes": keep_indexes, "raw": raw[:2000]})
-    return keep_indexes
+    # Le nom du cache dépend des candidats : si le préfiltre change, le tri est refait.
+    key_payload = {
+        "patient_id": patient_id,
+        "candidates": [{"system": c.get("system"), "code": c.get("code"), "display": c.get("display")} for c in candidates],
+    }
+    cache_id = hashlib.sha1(json.dumps(key_payload, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()[:16]
+    cache_path = settings.FILTER_CACHE_DIR / f"llm_keepidx_{patient_id}_{cache_id}.json"
+
+    cached = safe_read_json(cache_path)
+    if cached and isinstance(cached.get("keep_indexes"), list):
+        return [int(x) for x in cached["keep_indexes"] if str(x).isdigit()]
+
+    if not (settings.USE_LLM_PATIENT_FILTER and llm.available()):
+        write_json(cache_path, {"keep_indexes": keep_all, "mode": "no_llm"})
+        return keep_all
+
+    raw = llm.generate(
+        filter_prompt(candidates),
+        max_new_tokens=settings.LLM_FILTER_MAX_NEW_TOKENS,
+        temperature=settings.LLM_FILTER_TEMPERATURE,
+        do_sample=settings.LLM_FILTER_DO_SAMPLE,
+    )
+    obj = load_json_lenient(raw)
+
+    if obj is None and settings.LLM_FILTER_RETRIES > 0:
+        fixed = llm.generate(fix_prompt(raw), max_new_tokens=settings.LLM_FILTER_MAX_NEW_TOKENS,
+                             temperature=0.0, do_sample=False)
+        obj = load_json_lenient(fixed)
+
+    # Une liste vide est presque toujours un échec du modèle, pas une décision : on garde tout.
+    keep = _parse_keep_indexes(obj, len(candidates)) or keep_all
+    write_json(cache_path, {"keep_indexes": keep, "raw": raw[:2000]})
+    return keep
 
 
 def apply_llm_filter_to_sample(patients_in: List[dict], llm=None) -> List[dict]:
     out = []
     for p in patients_in:
-        pid = p["patient_id"]
         cands = p.get("conditions_candidates") or []
-        keep_idx = llm_keep_condition_indexes(pid, cands, llm=llm)
-        kept = [cands[i] for i in keep_idx if i < len(cands)]
-        kept_disp = [x.get("display") for x in kept if x.get("display")]
-
-        # Enregistrement patient final pour les étapes suivantes
-        p2 = dict(p)
-        p2["conditions_llm"] = kept_disp
-        p2["conditions"] = list(dict.fromkeys(kept_disp))[: settings.MAX_CONDITIONS_PER_PATIENT]
-        out.append(p2)
+        keep_idx = llm_keep_condition_indexes(p["patient_id"], cands, llm=llm)
+        kept = [cands[i].get("display") for i in keep_idx if i < len(cands) and cands[i].get("display")]
+        out.append({
+            **p,
+            "conditions_llm": kept,
+            "conditions": list(dict.fromkeys(kept))[: settings.MAX_CONDITIONS_PER_PATIENT],
+        })
     return out
 
 
+def build_gold(patients_prefilter: List[dict], llm=None) -> List[dict]:
+    patients = apply_llm_filter_to_sample(patients_prefilter, llm=llm)
+    save_gold(patients)
+    return patients
+
+
 # =========================
-# Lecture / écriture du gold
+# Lecture / écriture
 # =========================
 
 
 def save_gold(patients: List[dict]) -> None:
-    settings.GOLD_DIR.mkdir(parents=True, exist_ok=True)
     for p in patients:
         write_json(settings.GOLD_DIR / f'{p["patient_id"]}.json', p)
 
 
 def load_gold_patients() -> List[dict]:
-    """Relit le gold depuis data/gold_standard/ (permet de reprendre le pipeline dans un autre notebook)."""
-    patients = []
-    for p in list_json(settings.GOLD_DIR):
-        obj = read_json(p)
-        if isinstance(obj, dict) and obj.get("patient_id"):
-            patients.append(obj)
-    return patients
+    """Relit le gold depuis le disque, pour reprendre le pipeline dans un autre notebook."""
+    patients = [read_json(p) for p in list_json(settings.GOLD_DIR)]
+    return [p for p in patients if isinstance(p, dict) and p.get("patient_id")]
 
 
 def gold_dataframe(patients: List[dict]) -> pd.DataFrame:
@@ -197,10 +179,3 @@ def gold_dataframe(patients: List[dict]) -> pd.DataFrame:
         return df
     sort_cols = ["note_style", "patient_id"] if "note_style" in df.columns else ["patient_id"]
     return df.sort_values(sort_cols).reset_index(drop=True)
-
-
-def build_gold(patients_prefilter: List[dict], llm=None) -> List[dict]:
-    """Applique le filtre LLM puis écrit le gold sur disque."""
-    patients = apply_llm_filter_to_sample(patients_prefilter, llm=llm)
-    save_gold(patients)
-    return patients

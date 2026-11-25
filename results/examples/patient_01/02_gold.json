@@ -1,30 +1,15 @@
 {
-  "patient_id": "3a364909-94ec-e0c4-0156-8a2e15fa354e",
-  "given": "German382",
-  "family": "Trantow673",
-  "full_name": "German382 Trantow673",
-  "birthDate": "1961-08-10",
-  "gender": "male",
+  "patient_id": "f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0",
+  "given": "Geri861",
+  "family": "Padberg411",
+  "full_name": "Geri861 Padberg411",
+  "birthDate": "1944-11-18",
+  "gender": "female",
   "conditions_candidates": [
     {
       "system": "http://snomed.info/sct",
-      "code": "59621000",
-      "display": "Hypertension"
-    },
-    {
-      "system": "http://snomed.info/sct",
-      "code": "5251000175109",
-      "display": "Received certificate of high school equivalency (finding)"
-    },
-    {
-      "system": "http://snomed.info/sct",
-      "code": "713458007",
-      "display": "Lack of access to transportation (finding)"
-    },
-    {
-      "system": "http://snomed.info/sct",
-      "code": "266934004",
-      "display": "Transport problems (finding)"
+      "code": "195662009",
+      "display": "Acute viral pharyngitis (disorder)"
     },
     {
       "system": "http://snomed.info/sct",
@@ -33,61 +18,72 @@
     },
     {
       "system": "http://snomed.info/sct",
+      "code": "15777000",
+      "display": "Prediabetes"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "19169002",
+      "display": "Miscarriage in first trimester"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "124171000119105",
+      "display": "Chronic intractable migraine without aura"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "82423001",
+      "display": "Chronic pain"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "196416002",
+      "display": "Impacted molars"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "55680006",
+      "display": "Drug overdose"
+    },
+    {
+      "system": "http://snomed.info/sct",
       "code": "55822004",
       "display": "Hyperlipidemia"
     },
     {
       "system": "http://snomed.info/sct",
-      "code": "195662009",
-      "display": "Acute viral pharyngitis (disorder)"
-    },
-    {
-      "system": "http://snomed.info/sct",
       "code": "444814009",
       "display": "Viral sinusitis (disorder)"
-    },
-    {
-      "system": "http://snomed.info/sct",
-      "code": "43878008",
-      "display": "Streptococcal sore throat (disorder)"
-    },
-    {
-      "system": "http://snomed.info/sct",
-      "code": "10509002",
-      "display": "Acute bronchitis (disorder)"
     }
   ],
   "conditions": [
-    "Hypertension",
-    "Received certificate of high school equivalency (finding)",
-    "Lack of access to transportation (finding)",
-    "Transport problems (finding)",
-    "Body mass index 30+ - obesity (finding)",
-    "Hyperlipidemia",
     "Acute viral pharyngitis (disorder)",
-    "Viral sinusitis (disorder)",
-    "Streptococcal sore throat (disorder)",
-    "Acute bronchitis (disorder)"
+    "Body mass index 30+ - obesity (finding)",
+    "Prediabetes",
+    "Miscarriage in first trimester",
+    "Chronic intractable migraine without aura",
+    "Chronic pain",
+    "Impacted molars",
+    "Drug overdose",
+    "Hyperlipidemia",
+    "Viral sinusitis (disorder)"
   ],
   "medication_requests": [
-    "Hydrochlorothiazide 25 MG Oral Tablet",
-    "lisinopril 10 MG Oral Tablet",
-    "Simvastatin 10 MG Oral Tablet",
-    "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
-    "Acetaminophen 325 MG Oral Tablet"
+    "Simvastatin 10 MG Oral Tablet"
   ],
   "conditions_llm": [
-    "Hypertension",
-    "Received certificate of high school equivalency (finding)",
-    "Lack of access to transportation (finding)",
-    "Transport problems (finding)",
-    "Body mass index 30+ - obesity (finding)",
-    "Hyperlipidemia",
     "Acute viral pharyngitis (disorder)",
-    "Viral sinusitis (disorder)",
-    "Streptococcal sore throat (disorder)",
-    "Acute bronchitis (disorder)"
+    "Body mass index 30+ - obesity (finding)",
+    "Prediabetes",
+    "Miscarriage in first trimester",
+    "Chronic intractable migraine without aura",
+    "Chronic pain",
+    "Impacted molars",
+    "Drug overdose",
+    "Hyperlipidemia",
+    "Viral sinusitis (disorder)"
   ],
-  "note_style": "medical_history_note",
-  "note_style_label": "Medical history note"
+  "note_style": "telegraphic_note",
+  "note_style_label": "Telegraphic note"
 }

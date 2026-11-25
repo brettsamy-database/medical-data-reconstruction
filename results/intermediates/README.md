@@ -1,29 +1,11 @@
-# Intermediates
+# Tables intermédiaires
 
-Ce dossier contient les résultats intermédiaires principaux du pipeline.
+Les trois états successifs du dossier de chaque patient :
 
-Il permet de suivre la chaîne centrale du projet :
+| Fichier | Contenu |
+|---|---|
+| `df_gold.csv` | le gold source : identité, style de note attribué, conditions et prescriptions de référence |
+| `df_notes.csv` | la note générée, en version brute et en version nettoyée (la seule que voit la reconstruction) |
+| `df_recon.csv` | la reconstruction : JSON brut, listes nettoyées (scorées) et intersection exacte avec le gold (pour déboguer) |
 
-**source structurée -> note générée -> reconstruction**
-
-## Contenu
-
-- `df_gold.csv` : source structurée filtrée utilisée pour générer les notes
-- `df_notes.csv` : notes générées, avec versions brutes et nettoyées
-- `df_recon.csv` : reconstruction structurée obtenue à partir des notes
-
-## Pourquoi ces fichiers sont importants
-
-Ces tables permettent de comprendre concrètement :
-
-- ce que le pipeline retient comme information médicale de référence,
-- à quoi ressemblent les notes cliniques générées,
-- ce que le système arrive à reconstruire à partir de ces notes.
-
-## Utilisation conseillée
-
-Ce sous-dossier est utile pour :
-
-- comprendre la mécanique du pipeline,
-- comparer visuellement la source, la note et la reconstruction,
-- illustrer le projet dans une soutenance ou une démonstration.
+Les listes sont stockées deux fois : en JSON (`*_json`), pour être relues par du code, et en aperçu lisible (`*_preview`, les 6 premiers éléments).

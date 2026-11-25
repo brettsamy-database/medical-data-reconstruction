@@ -1,21 +1,27 @@
-# Patient 02
+# Patient 02 : le piège des reformulations
 
-Ce dossier contient un exemple patient permettant d'illustrer toute la pipeline du projet.
+**Style de note :** antécédents médicaux · **4 conditions, 4 prescriptions** dans la gold source
 
-## Chaîne représentée
+Ce patient montre pourquoi le score exact seul ne suffit pas pour juger les conditions.
 
-1. `01_filtered.json`
-2. `02_gold.json`
-3. `03_note.txt`
-4. `04_reconstruction.json`
-5. `05_score_and_07_errors.json`
-6. `06_verification.json`
+La note reprend fidèlement les quatre diagnostics, mais en langage naturel :
 
-## Intérêt de cet exemple
+> *Genny123 Rath779 [...] has a history of anemia, acute bacterial sinusitis, chronic sinusitis, and osteoporosis.*
 
-Cet exemple permet de suivre la transformation des données étape par étape sur un cas individuel.
+MedGemma les retrouve tous, mais les écrit comme dans la note :
 
-## Remarque
+| Gold source | Reconstruction |
+|---|---|
+| Anemia (disorder) | anemia |
+| Acute bacterial sinusitis (disorder) | acute bacterial sinusitis |
+| Chronic sinusitis (disorder) | chronic sinusitis |
+| Osteoporosis (disorder) | osteoporosis |
 
-Dans cet exemple, le score patient et l'analyse des erreurs sont regroupés dans un seul fichier :
-- `05_score_and_07_errors.json`
+| | F1 exact | F1 sémantique |
+|---|---:|---:|
+| Conditions | **0.00** | **1.00** |
+| Prescriptions | 1.00 | 1.00 |
+
+Le score exact compte zéro bonne réponse, alors que la reconstruction est parfaite. Ce cas résume l'écart entre le F1 exact (0.29) et le F1 sémantique (0.84) observé sur les conditions dans l'ensemble du benchmark.
+
+Les prescriptions, elles, ont des libellés techniques (« Alendronic acid 10 MG Oral Tablet ») que personne ne reformule : elles sont recopiées mot pour mot.

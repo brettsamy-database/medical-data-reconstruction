@@ -1,217 +1,275 @@
 patient_id,rank,condition
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,0,Atopic dermatitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,1,Otitis media
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,2,Perennial allergic rhinitis
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,3,Acute viral pharyngitis (disorder)
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,4,Viral sinusitis (disorder)
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,5,Streptococcal sore throat (disorder)
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,6,Sinusitis (disorder)
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,7,Chronic sinusitis (disorder)
-01f8bbfd-cfc6-3b97-8bc1-8da6f0b4a9a8,8,Acute bacterial sinusitis (disorder)
-03777c32-ed98-50e2-f75d-cbcad532c610,0,Body mass index 30+ - obesity (finding)
-03777c32-ed98-50e2-f75d-cbcad532c610,1,"Localized, primary osteoarthritis of the hand"
-03777c32-ed98-50e2-f75d-cbcad532c610,2,Acute bronchitis (disorder)
-03777c32-ed98-50e2-f75d-cbcad532c610,3,Coronary Heart Disease
-03777c32-ed98-50e2-f75d-cbcad532c610,4,Severe anxiety (panic) (finding
-0a168e32-7b62-8597-0e11-296871bb764f,0,Appendicitis
-0a168e32-7b62-8597-0e11-296871bb764f,1,History of appendectomy
-0a168e32-7b62-8597-0e11-296871bb764f,2,Acute bronchitis (disorder)
-0a168e32-7b62-8597-0e11-296871bb764f,3,Fracture subluxation of wrist
-0a168e32-7b62-8597-0e11-296871bb764f,4,Viral sinusitis (disorder)
-0a168e32-7b62-8597-0e11-296871bb764f,5,Hypertension
-0a168e32-7b62-8597-0e11-296871bb764f,6,Unhealthy alcohol drinking behavior (finding)
-122b4063-18dc-f20f-204c-6f2da758717b,0,Viral sinusitis (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,0,Sepsis (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,1,Body mass index 30+ - obesity (finding)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,2,Chronic sinusitis (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,3,Prediabetes
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,4,Anemia (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,5,Diabetes
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,6,Hypertension
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,7,Hyperglycemia (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,8,Hypertriglyceridemia (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,9,Metabolic syndrome X (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,10,Neuropathy due to type 2 diabetes mellitus (disorder)
-1293efbb-72dc-8b15-3bd6-916f96ed54f4,11,Viral sinusitis (disorder)
-162135b4-931d-a531-c2ad-047b0c24abe8,0,Childhood asthma
-162135b4-931d-a531-c2ad-047b0c24abe8,1,Otitis media
-162135b4-931d-a531-c2ad-047b0c24abe8,2,Fracture subluxation of wrist
-162135b4-931d-a531-c2ad-047b0c24abe8,3,Acute viral pharyngitis (disorder)
-162135b4-931d-a531-c2ad-047b0c24abe8,4,Coronary Heart Disease
-1ea40a05-c295-8b66-66a2-fda3bc1ed13f,0,Anemia (disorder)
-1ea40a05-c295-8b66-66a2-fda3bc1ed13f,1,Acute bronchitis (disorder)
-1ea40a05-c295-8b66-66a2-fda3bc1ed13f,2,Acute viral pharyngitis (disorder)
-1ea40a05-c295-8b66-66a2-fda3bc1ed13f,3,Facial laceration
-1f06f787-61cd-dd2d-a6b2-347507100f10,0,Rupture of appendix
-1f06f787-61cd-dd2d-a6b2-347507100f10,1,Appendicitis
-1f06f787-61cd-dd2d-a6b2-347507100f10,2,History of appendectomy
-1f06f787-61cd-dd2d-a6b2-347507100f10,3,Acute viral pharyngitis (disorder)
-1f06f787-61cd-dd2d-a6b2-347507100f10,4,Facial laceration
-1f06f787-61cd-dd2d-a6b2-347507100f10,5,Viral sinusitis (disorder)
-1f06f787-61cd-dd2d-a6b2-347507100f10,6,Sinusitis (disorder)
-246fb368-8991-dc93-f6a5-eca807e7dbde,0,Hypertension
-246fb368-8991-dc93-f6a5-eca807e7dbde,1,Chronic neck pain (finding)
-246fb368-8991-dc93-f6a5-eca807e7dbde,2,Normal pregnancy
-246fb368-8991-dc93-f6a5-eca807e7dbde,3,Viral sinusitis (disorder)
-246fb368-8991-dc93-f6a5-eca807e7dbde,4,Streptococcal sore throat (disorder)
-246fb368-8991-dc93-f6a5-eca807e7dbde,5,Acute viral pharyngitis (disorder)
-355a3cad-a055-c14b-117e-47accfc708ca,0,Cerebral palsy (disorder)
-355a3cad-a055-c14b-117e-47accfc708ca,1,Pain (finding)
-355a3cad-a055-c14b-117e-47accfc708ca,2,Poor muscle tone (finding)
-355a3cad-a055-c14b-117e-47accfc708ca,3,Spasticity (finding)
-355a3cad-a055-c14b-117e-47accfc708ca,4,Osteoporosis (disorder)
-355a3cad-a055-c14b-117e-47accfc708ca,5,Intellectual disability (disorder)
-355a3cad-a055-c14b-117e-47accfc708ca,6,Dislocation of hip joint (disorder)
-355a3cad-a055-c14b-117e-47accfc708ca,7,Pneumonia (disorder)
-355a3cad-a055-c14b-117e-47accfc708ca,8,Otitis media
-355a3cad-a055-c14b-117e-47accfc708ca,9,Injury of tendon of the rotator cuff of shoulder
-355a3cad-a055-c14b-117e-47accfc708ca,10,Chronic low back pain (finding)
-355a3cad-a055-c14b-117e-47accfc708ca,11,Chronic neck pain (finding)
-39b4eaac-6d32-3610-6cdf-20196fd708cb,0,Acute bronchitis (disorder)
-39b4eaac-6d32-3610-6cdf-20196fd708cb,1,Fracture of forearm
-3a364909-94ec-e0c4-0156-8a2e15fa354e,0,Hypertension
-3a364909-94ec-e0c4-0156-8a2e15fa354e,1,Received certificate of high school equivalency (finding)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,2,Lack of access to transportation (finding)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,3,Transport problems (finding)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,4,Body mass index 30+ - obesity (finding)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,5,Hyperlipidemia
-3a364909-94ec-e0c4-0156-8a2e15fa354e,6,Acute viral pharyngitis (disorder)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,7,Viral sinusitis (disorder)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,8,Streptococcal sore throat (disorder)
-3a364909-94ec-e0c4-0156-8a2e15fa354e,9,Acute bronchitis (disorder)
-3beee40e-512b-420f-38a3-28e56cddbc9b,0,Atopic dermatitis
-3beee40e-512b-420f-38a3-28e56cddbc9b,1,Received certificate of high school equivalency (finding)
-3beee40e-512b-420f-38a3-28e56cddbc9b,2,Body mass index 30+ - obesity (finding)
-3beee40e-512b-420f-38a3-28e56cddbc9b,3,Prediabetes
-3beee40e-512b-420f-38a3-28e56cddbc9b,4,Diabetes
-3beee40e-512b-420f-38a3-28e56cddbc9b,5,Hypertension
-3beee40e-512b-420f-38a3-28e56cddbc9b,6,Hypertriglyceridemia (disorder)
-3beee40e-512b-420f-38a3-28e56cddbc9b,7,Metabolic syndrome X (disorder)
-3beee40e-512b-420f-38a3-28e56cddbc9b,8,Anemia (disorder)
-3beee40e-512b-420f-38a3-28e56cddbc9b,9,Hyperglycemia (disorder)
-3beee40e-512b-420f-38a3-28e56cddbc9b,10,Neuropathy due to type 2 diabetes mellitus (disorder)
-3beee40e-512b-420f-38a3-28e56cddbc9b,11,Chronic neck pain (finding)
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,0,Body mass index 30+ - obesity (finding)
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,1,Prediabetes
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,2,Anemia (disorder)
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,3,Bleeding from anus
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,4,Protracted diarrhea
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,5,Stroke
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,6,Viral sinusitis (disorder)
+07a1f80c-f4e2-8e91-5913-270fc6afa25d,7,Unhealthy alcohol drinking behavior (finding)
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,0,Anemia (disorder)
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,1,Acute bacterial sinusitis (disorder)
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,2,Chronic sinusitis (disorder)
+0f444cf3-eb58-6f42-c740-a6ab70cec7ee,3,Osteoporosis (disorder)
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,0,Body mass index 30+ - obesity (finding)
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,1,Prediabetes
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,2,Anemia (disorder)
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,3,Laceration of foot
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,4,Chronic low back pain (finding)
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,5,Acute bronchitis (disorder)
+1fe3dce8-51b2-98ed-751e-dd8f64a48fb7,6,Unhealthy alcohol drinking behavior (finding)
+217f95a3-4e10-bd5d-fb67-0cfb5e8ba075,0,Sinusitis (disorder)
+217f95a3-4e10-bd5d-fb67-0cfb5e8ba075,1,Chronic sinusitis (disorder)
+217f95a3-4e10-bd5d-fb67-0cfb5e8ba075,2,Viral sinusitis (disorder)
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,0,Atopic dermatitis
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,1,Streptococcal sore throat (disorder)
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,2,Sinusitis (disorder)
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,3,Viral sinusitis (disorder)
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,4,Laceration of forearm
+2783a318-7e6d-e3a7-fce7-2a70e66c6ba9,5,Acute bronchitis (disorder)
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,0,Otitis media
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,1,Body mass index 30+ - obesity (finding)
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,2,Chronic intractable migraine without aura
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,3,Drug overdose
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,4,Streptococcal sore throat (disorder)
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,5,Acute bronchitis (disorder)
+30813a62-aa9f-3c7c-cc52-6c3957a3c1b1,6,Viral sinusitis (disorder)
+319372b8-27b1-b827-5c89-ac991fc17407,0,Hypertension
+319372b8-27b1-b827-5c89-ac991fc17407,1,Served in armed forces (finding)
+319372b8-27b1-b827-5c89-ac991fc17407,2,Received certificate of high school equivalency (finding)
+319372b8-27b1-b827-5c89-ac991fc17407,3,Lack of access to transportation (finding)
+319372b8-27b1-b827-5c89-ac991fc17407,4,Body mass index 30+ - obesity (finding)
+319372b8-27b1-b827-5c89-ac991fc17407,5,Transport problems (finding)
+319372b8-27b1-b827-5c89-ac991fc17407,6,Prediabetes
+319372b8-27b1-b827-5c89-ac991fc17407,7,Anemia (disorder)
+319372b8-27b1-b827-5c89-ac991fc17407,8,Rupture of appendix
+319372b8-27b1-b827-5c89-ac991fc17407,9,Appendicitis
+319372b8-27b1-b827-5c89-ac991fc17407,10,History of appendectomy
+319372b8-27b1-b827-5c89-ac991fc17407,11,Unhealthy alcohol drinking behavior (finding)
+339144f8-50e1-633e-a013-f361391c4cff,0,Sprain of ankle
+339144f8-50e1-633e-a013-f361391c4cff,1,Body mass index 30+ - obesity (finding)
+339144f8-50e1-633e-a013-f361391c4cff,2,Hypertension
+339144f8-50e1-633e-a013-f361391c4cff,3,Received certificate of high school equivalency (finding)
+339144f8-50e1-633e-a013-f361391c4cff,4,Acute viral pharyngitis (disorder)
+339144f8-50e1-633e-a013-f361391c4cff,5,Viral sinusitis (disorder)
+339144f8-50e1-633e-a013-f361391c4cff,6,Refugee (person)
+4f5a07ca-02e0-8981-3c30-4d9924a169a3,0,Sinusitis (disorder)
+4f5a07ca-02e0-8981-3c30-4d9924a169a3,1,Prediabetes
+4f5a07ca-02e0-8981-3c30-4d9924a169a3,2,Viral sinusitis (disorder)
 51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,0,Streptococcal sore throat (disorder)
 51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,1,Viral sinusitis (disorder)
 51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,2,Chronic low back pain (finding)
 51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,3,Chronic neck pain (finding)
 51c7ff6a-33e3-3e1b-d3ad-0035c8227dfa,4,Hypertension
-561db9de-7617-4fed-b230-1553b8dd65f3,0,Acute viral pharyngitis (disorder)
-561db9de-7617-4fed-b230-1553b8dd65f3,1,Viral sinusitis (disorder)
-561db9de-7617-4fed-b230-1553b8dd65f3,2,Escherichia coli urinary tract infection
-561db9de-7617-4fed-b230-1553b8dd65f3,3,Severe anxiety (panic) (finding
-561db9de-7617-4fed-b230-1553b8dd65f3,4,Sprain of ankle
-67c6597f-c239-a595-beac-b2941e7b54ff,0,Body mass index 30+ - obesity (finding)
-67c6597f-c239-a595-beac-b2941e7b54ff,1,Hyperlipidemia
-67c6597f-c239-a595-beac-b2941e7b54ff,2,Streptococcal sore throat (disorder)
-67c6597f-c239-a595-beac-b2941e7b54ff,3,Chronic neck pain (finding)
-67c6597f-c239-a595-beac-b2941e7b54ff,4,Otitis media
-67c6597f-c239-a595-beac-b2941e7b54ff,5,Acute bronchitis (disorder)
-68444584-c6e0-8d53-923e-ce79ba7c1911,0,Viral sinusitis (disorder)
-68444584-c6e0-8d53-923e-ce79ba7c1911,1,Otitis media
-6ab08a28-1670-be6a-f2c9-f2e248700836,0,Acute viral pharyngitis (disorder)
-6ab08a28-1670-be6a-f2c9-f2e248700836,1,Body mass index 30+ - obesity (finding)
-6ab08a28-1670-be6a-f2c9-f2e248700836,2,Acute bacterial sinusitis (disorder)
-6ab08a28-1670-be6a-f2c9-f2e248700836,3,Acute bronchitis (disorder)
-6ab08a28-1670-be6a-f2c9-f2e248700836,4,Hypertension
-6ab08a28-1670-be6a-f2c9-f2e248700836,5,Body mass index 40+ - severely obese (finding)
-6ab08a28-1670-be6a-f2c9-f2e248700836,6,Viral sinusitis (disorder)
-6ab08a28-1670-be6a-f2c9-f2e248700836,7,Streptococcal sore throat (disorder)
-6d715e84-4c7a-e4a9-e8ce-6065e2607107,0,Fracture subluxation of wrist
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,0,Hypertension
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,1,Chronic sinusitis (disorder)
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,2,Viral sinusitis (disorder)
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,3,Acute viral pharyngitis (disorder)
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,4,Chronic low back pain (finding)
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,5,Escherichia coli urinary tract infection
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,6,Miscarriage in first trimester
-6f0b58f9-cb95-1fb3-5fef-cd914f9b4de3,7,Preeclampsia
-752a3c69-44d7-d6af-0340-7d3e748f6060,0,Fracture of ankle
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,0,Normal pregnancy
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,1,Anemia (disorder)
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,2,Acute viral pharyngitis (disorder)
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,3,Viral sinusitis (disorder)
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,4,Acute Cholecystitis
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,5,Cholelithiasis
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,6,Chronic neck pain (finding)
-7d28d76a-9ac8-67b4-3c88-0a75be3d0851,7,Acute bronchitis (disorder)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,0,Received certificate of high school equivalency (finding)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,1,Refugee (person)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,2,Body mass index 30+ - obesity (finding)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,3,Acute viral pharyngitis (disorder)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,4,Chronic neck pain (finding)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,5,Viral sinusitis (disorder)
-84fee56a-9ef7-8cff-e7d3-526ece562d87,6,First degree burn
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,0,Recurrent urinary tract infection
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,1,Fracture of rib
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,2,Normal pregnancy
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,3,Viral sinusitis (disorder)
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,4,Cough (finding)
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,5,Loss of taste (finding)
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,6,Suspected COVID-19
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,7,COVID-19
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,8,Pneumonia (disorder)
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,9,Hypoxemia (disorder)
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,10,Sepsis caused by virus (disorder)
-86dbfa87-dc1c-e529-f39b-4910e4deb3fb,11,Acute pulmonary embolism (disorder)
-8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,0,Diabetes
-8c6ae452-5f8c-9ff6-006d-c6c860acf5cd,1,Diabetic renal disease (disorder)
-90053970-cbf7-9102-32f1-61c1b05827a8,0,Anemia (disorder)
-90053970-cbf7-9102-32f1-61c1b05827a8,1,Suspected COVID-19
-90053970-cbf7-9102-32f1-61c1b05827a8,2,COVID-19
-90053970-cbf7-9102-32f1-61c1b05827a8,3,Homeless (finding)
-9055bf8d-a995-d068-a3e0-666a002b5683,0,Otitis media
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,0,Viral sinusitis (disorder)
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,1,Acute bronchitis (disorder)
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,2,Otitis media
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,3,Laceration of thigh
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,4,Acute bacterial sinusitis (disorder)
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,5,Prediabetes
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,6,Anemia (disorder)
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,7,Acute viral pharyngitis (disorder)
-965ecf4b-40d6-02e3-fe08-acd9eafc68fe,8,Chronic congestive heart failure (disorder)
-9b94051f-59a9-c941-61af-9acf2a9af22f,0,Acute viral pharyngitis (disorder)
-9b94051f-59a9-c941-61af-9acf2a9af22f,1,Fracture subluxation of wrist
-9b94051f-59a9-c941-61af-9acf2a9af22f,2,Viral sinusitis (disorder)
-9b94051f-59a9-c941-61af-9acf2a9af22f,3,Osteoporosis (disorder)
-9b94051f-59a9-c941-61af-9acf2a9af22f,4,Closed fracture of hip
-9b94051f-59a9-c941-61af-9acf2a9af22f,5,Pathological fracture due to osteoporosis (disorder)
-9b94051f-59a9-c941-61af-9acf2a9af22f,6,Acute bronchitis (disorder)
-9b94051f-59a9-c941-61af-9acf2a9af22f,7,Fracture of forearm
-9bbc77f6-c1e1-0c48-c64e-eb5958f15faf,0,Acute viral pharyngitis (disorder)
-a3752f35-b99c-5da7-a16a-f6e06adc97ac,0,Viral sinusitis (disorder)
-a67877ad-5f7a-782d-c74c-0aa5d2072de3,0,Viral sinusitis (disorder)
-a8eed586-7fc7-e064-78ee-c6d227039940,0,Acute viral pharyngitis (disorder)
-a8eed586-7fc7-e064-78ee-c6d227039940,1,Otitis media
-a8eed586-7fc7-e064-78ee-c6d227039940,2,Viral sinusitis (disorder)
-add236d5-0131-8a3f-8b55-a081df83922e,0,Acute viral pharyngitis (disorder)
-add236d5-0131-8a3f-8b55-a081df83922e,1,Sprain of ankle
-add236d5-0131-8a3f-8b55-a081df83922e,2,Hypertension
-add236d5-0131-8a3f-8b55-a081df83922e,3,Normal pregnancy
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,0,Childhood asthma
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,1,Seasonal allergic rhinitis
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,2,Viral sinusitis (disorder)
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,3,Acute bronchitis (disorder)
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,4,Acute viral pharyngitis (disorder)
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,5,Acute bacterial sinusitis (disorder)
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,6,Chronic sinusitis (disorder)
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,7,Otitis media
-ce1153cb-d4ad-77e2-cd07-575e249a83ad,8,Streptococcal sore throat (disorder)
+563187cb-7236-8b85-e6bc-79f35538910d,0,Viral sinusitis (disorder)
+563187cb-7236-8b85-e6bc-79f35538910d,1,Normal pregnancy
+563187cb-7236-8b85-e6bc-79f35538910d,2,Antepartum eclampsia
+563187cb-7236-8b85-e6bc-79f35538910d,3,Polyp of colon
+563187cb-7236-8b85-e6bc-79f35538910d,4,Sprain of ankle
+56e2acb9-efb3-f7b5-39bd-c2a1f860e553,0,Acute viral pharyngitis (disorder)
+56e2acb9-efb3-f7b5-39bd-c2a1f860e553,1,Viral sinusitis (disorder)
+56e2acb9-efb3-f7b5-39bd-c2a1f860e553,2,Acute bronchitis (disorder)
+57e403fc-885a-3b44-804e-a034ca08413c,0,History of single seizure (situation)
+57e403fc-885a-3b44-804e-a034ca08413c,1,Epilepsy
+57e403fc-885a-3b44-804e-a034ca08413c,2,Prediabetes
+57e403fc-885a-3b44-804e-a034ca08413c,3,Transport problems (finding)
+57e403fc-885a-3b44-804e-a034ca08413c,4,Anemia (disorder)
+57e403fc-885a-3b44-804e-a034ca08413c,5,Acute bronchitis (disorder)
+57e403fc-885a-3b44-804e-a034ca08413c,6,Viral sinusitis (disorder)
+5cac9f29-c0e1-551d-98a8-277cc8f578df,0,Body mass index 30+ - obesity (finding)
+5cac9f29-c0e1-551d-98a8-277cc8f578df,1,Miscarriage in first trimester
+5cac9f29-c0e1-551d-98a8-277cc8f578df,2,Prediabetes
+5cac9f29-c0e1-551d-98a8-277cc8f578df,3,Chronic sinusitis (disorder)
+5cac9f29-c0e1-551d-98a8-277cc8f578df,4,Viral sinusitis (disorder)
+5cac9f29-c0e1-551d-98a8-277cc8f578df,5,Laceration of thigh
+5cac9f29-c0e1-551d-98a8-277cc8f578df,6,Concussion with no loss of consciousness
+5cac9f29-c0e1-551d-98a8-277cc8f578df,7,Alzheimer's disease (disorder)
+5cac9f29-c0e1-551d-98a8-277cc8f578df,8,Whiplash injury to neck
+5cac9f29-c0e1-551d-98a8-277cc8f578df,9,Stroke
+5cac9f29-c0e1-551d-98a8-277cc8f578df,10,Closed fracture of hip
+5cd20da5-2f01-b94a-07fb-173648c58460,0,Received certificate of high school equivalency (finding)
+5cd20da5-2f01-b94a-07fb-173648c58460,1,Transport problems (finding)
+5cd20da5-2f01-b94a-07fb-173648c58460,2,Body mass index 30+ - obesity (finding)
+5cd20da5-2f01-b94a-07fb-173648c58460,3,Lack of access to transportation (finding)
+5cd20da5-2f01-b94a-07fb-173648c58460,4,Miscarriage in first trimester
+5cd20da5-2f01-b94a-07fb-173648c58460,5,Prediabetes
+5cd20da5-2f01-b94a-07fb-173648c58460,6,Anemia (disorder)
+5cd20da5-2f01-b94a-07fb-173648c58460,7,Osteoarthritis of knee
+5cd20da5-2f01-b94a-07fb-173648c58460,8,Chronic sinusitis (disorder)
+5cd20da5-2f01-b94a-07fb-173648c58460,9,Osteoporosis (disorder)
+5cd20da5-2f01-b94a-07fb-173648c58460,10,Hyperlipidemia
+5cd20da5-2f01-b94a-07fb-173648c58460,11,Fracture of forearm
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,0,Acute viral pharyngitis (disorder)
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,1,Viral sinusitis (disorder)
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,2,Acute bronchitis (disorder)
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,3,Otitis media
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,4,Child attention deficit disorder
+5fe0db77-0fe4-4472-ce22-b6e860ec103a,5,Streptococcal sore throat (disorder)
+72f91cc7-fb63-84e8-32ff-86456bfa446e,0,Hypertension
+72f91cc7-fb63-84e8-32ff-86456bfa446e,1,Received certificate of high school equivalency (finding)
+72f91cc7-fb63-84e8-32ff-86456bfa446e,2,Prediabetes
+72f91cc7-fb63-84e8-32ff-86456bfa446e,3,Anemia (disorder)
+72f91cc7-fb63-84e8-32ff-86456bfa446e,4,Chronic pain
+72f91cc7-fb63-84e8-32ff-86456bfa446e,5,Impacted molars
+72f91cc7-fb63-84e8-32ff-86456bfa446e,6,Chronic intractable migraine without aura
+72f91cc7-fb63-84e8-32ff-86456bfa446e,7,Drug overdose
+72f91cc7-fb63-84e8-32ff-86456bfa446e,8,Polyp of colon
+72f91cc7-fb63-84e8-32ff-86456bfa446e,9,Recurrent rectal polyp
+72f91cc7-fb63-84e8-32ff-86456bfa446e,10,Viral sinusitis (disorder)
+72f91cc7-fb63-84e8-32ff-86456bfa446e,11,Chronic low back pain (finding)
+747405cb-2f91-e54a-c123-55f4e9edfc4c,0,Chronic intractable migraine without aura
+747405cb-2f91-e54a-c123-55f4e9edfc4c,1,Acute viral pharyngitis (disorder)
+747405cb-2f91-e54a-c123-55f4e9edfc4c,2,Concussion with loss of consciousness
+747405cb-2f91-e54a-c123-55f4e9edfc4c,3,Acute bronchitis (disorder)
+747405cb-2f91-e54a-c123-55f4e9edfc4c,4,Facial laceration
+767e1d64-d100-a9ec-fe05-073c6857ffa8,0,Coronary Heart Disease
+767e1d64-d100-a9ec-fe05-073c6857ffa8,1,Body mass index 30+ - obesity (finding)
+767e1d64-d100-a9ec-fe05-073c6857ffa8,2,Osteoarthritis of knee
+767e1d64-d100-a9ec-fe05-073c6857ffa8,3,Miscarriage in first trimester
+767e1d64-d100-a9ec-fe05-073c6857ffa8,4,Viral sinusitis (disorder)
+767e1d64-d100-a9ec-fe05-073c6857ffa8,5,Acute viral pharyngitis (disorder)
+767e1d64-d100-a9ec-fe05-073c6857ffa8,6,Unhealthy alcohol drinking behavior (finding)
+767e1d64-d100-a9ec-fe05-073c6857ffa8,7,Otitis media
+767e1d64-d100-a9ec-fe05-073c6857ffa8,8,Acute bronchitis (disorder)
+80534c6c-b12d-caa5-42de-b179fd7f9695,0,Viral sinusitis (disorder)
+80534c6c-b12d-caa5-42de-b179fd7f9695,1,Whiplash injury to neck
+80534c6c-b12d-caa5-42de-b179fd7f9695,2,Acute viral pharyngitis (disorder)
+80534c6c-b12d-caa5-42de-b179fd7f9695,3,Prediabetes
+80534c6c-b12d-caa5-42de-b179fd7f9695,4,Misuses drugs (finding)
+80534c6c-b12d-caa5-42de-b179fd7f9695,5,Diabetes
+80534c6c-b12d-caa5-42de-b179fd7f9695,6,Neuropathy due to type 2 diabetes mellitus (disorder)
+81466d70-5714-130a-24dc-b7fa2e2bc15c,0,Acute bacterial sinusitis (disorder)
+83f922a9-3567-cb65-b57f-2da9cc05af15,0,Transport problems (finding)
+83f922a9-3567-cb65-b57f-2da9cc05af15,1,Lack of access to transportation (finding)
+83f922a9-3567-cb65-b57f-2da9cc05af15,2,Refugee (person)
+83f922a9-3567-cb65-b57f-2da9cc05af15,3,Diabetes
+83f922a9-3567-cb65-b57f-2da9cc05af15,4,Hypertension
+83f922a9-3567-cb65-b57f-2da9cc05af15,5,Hypertriglyceridemia (disorder)
+83f922a9-3567-cb65-b57f-2da9cc05af15,6,Neuropathy due to type 2 diabetes mellitus (disorder)
+83f922a9-3567-cb65-b57f-2da9cc05af15,7,Metabolic syndrome X (disorder)
+83f922a9-3567-cb65-b57f-2da9cc05af15,8,Miscarriage in first trimester
+83f922a9-3567-cb65-b57f-2da9cc05af15,9,Acute viral pharyngitis (disorder)
+83f922a9-3567-cb65-b57f-2da9cc05af15,10,Viral sinusitis (disorder)
+83f922a9-3567-cb65-b57f-2da9cc05af15,11,Normal pregnancy
+859e5c6f-f1db-308d-0e33-57d392c1bf04,0,Coronary Heart Disease
+859e5c6f-f1db-308d-0e33-57d392c1bf04,1,Acute bronchitis (disorder)
+859e5c6f-f1db-308d-0e33-57d392c1bf04,2,Myocardial Infarction
+859e5c6f-f1db-308d-0e33-57d392c1bf04,3,History of myocardial infarction (situation)
+859e5c6f-f1db-308d-0e33-57d392c1bf04,4,Acute viral pharyngitis (disorder)
+859e5c6f-f1db-308d-0e33-57d392c1bf04,5,Otitis media
+859e5c6f-f1db-308d-0e33-57d392c1bf04,6,Appendicitis
+859e5c6f-f1db-308d-0e33-57d392c1bf04,7,History of appendectomy
+859e5c6f-f1db-308d-0e33-57d392c1bf04,8,Viral sinusitis (disorder)
+8fa5a097-1970-9370-4193-a7baa3d235b5,0,Viral sinusitis (disorder)
+8fa5a097-1970-9370-4193-a7baa3d235b5,1,Acute bronchitis (disorder)
+8fa5a097-1970-9370-4193-a7baa3d235b5,2,Laceration of foot
+8fa5a097-1970-9370-4193-a7baa3d235b5,3,Chronic low back pain (finding)
+8fa5a097-1970-9370-4193-a7baa3d235b5,4,Normal pregnancy
+8fa5a097-1970-9370-4193-a7baa3d235b5,5,Sprain of wrist
+8fa5a097-1970-9370-4193-a7baa3d235b5,6,Acute viral pharyngitis (disorder)
+8fa5a097-1970-9370-4193-a7baa3d235b5,7,Cough (finding)
+8fa5a097-1970-9370-4193-a7baa3d235b5,8,Fatigue (finding)
+8fa5a097-1970-9370-4193-a7baa3d235b5,9,Dyspnea (finding)
+8fa5a097-1970-9370-4193-a7baa3d235b5,10,Wheezing (finding)
+8fa5a097-1970-9370-4193-a7baa3d235b5,11,Fever (finding)
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,0,Otitis media
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,1,Fracture subluxation of wrist
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,2,Viral sinusitis (disorder)
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,3,Concussion with no loss of consciousness
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,4,Nasal congestion (finding)
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,5,Fever (finding)
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,6,Loss of taste (finding)
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,7,Suspected COVID-19
+92fb7efc-5cfd-f8d3-927b-42f8ee099531,8,COVID-19
+a7624ac9-6308-e015-1c5c-115c97c631fe,0,Body mass index 30+ - obesity (finding)
+a7624ac9-6308-e015-1c5c-115c97c631fe,1,Miscarriage in first trimester
+a7624ac9-6308-e015-1c5c-115c97c631fe,2,Tubal pregnancy
+a7624ac9-6308-e015-1c5c-115c97c631fe,3,Unhealthy alcohol drinking behavior (finding)
+a7624ac9-6308-e015-1c5c-115c97c631fe,4,Acute viral pharyngitis (disorder)
+a7624ac9-6308-e015-1c5c-115c97c631fe,5,Hyperlipidemia
+a7624ac9-6308-e015-1c5c-115c97c631fe,6,Viral sinusitis (disorder)
+a7624ac9-6308-e015-1c5c-115c97c631fe,7,Osteoarthritis of knee
+be86cb71-0481-f2c6-c89b-e8ea1136a893,0,Viral sinusitis (disorder)
+be86cb71-0481-f2c6-c89b-e8ea1136a893,1,Chronic low back pain (finding)
+be86cb71-0481-f2c6-c89b-e8ea1136a893,2,Chronic neck pain (finding)
+be86cb71-0481-f2c6-c89b-e8ea1136a893,3,Acute bacterial sinusitis (disorder)
+be86cb71-0481-f2c6-c89b-e8ea1136a893,4,Acute viral pharyngitis (disorder)
+c518abbe-9695-1b3a-3173-305ff9bb6150,0,Hypertension
+c518abbe-9695-1b3a-3173-305ff9bb6150,1,Body mass index 30+ - obesity (finding)
+c518abbe-9695-1b3a-3173-305ff9bb6150,2,Sinusitis (disorder)
+c518abbe-9695-1b3a-3173-305ff9bb6150,3,Laceration of thigh
+c518abbe-9695-1b3a-3173-305ff9bb6150,4,Chronic sinusitis (disorder)
+c518abbe-9695-1b3a-3173-305ff9bb6150,5,Escherichia coli urinary tract infection
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,0,Acute bronchitis (disorder)
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,1,Sprain of wrist
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,2,Concussion with no loss of consciousness
+c9b4f8c6-d7be-6563-0560-c90cfe6b12ca,3,Chronic low back pain (finding)
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,0,Transport problems (finding)
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,1,Prediabetes
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,2,Anemia (disorder)
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,3,Lack of access to transportation (finding)
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,4,Osteoarthritis of hip
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,5,Miscarriage in first trimester
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,6,Tubal pregnancy
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,7,Hyperlipidemia
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,8,Chronic low back pain (finding)
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,9,Chronic neck pain (finding)
+ce54be47-1a8f-e1eb-9b4d-ca61378d9f41,10,Acute bronchitis (disorder)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,0,Lack of access to transportation (finding)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,1,Transport problems (finding)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,2,Prediabetes
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,3,Anemia (disorder)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,4,Concussion with no loss of consciousness
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,5,Osteoporosis (disorder)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,6,Acute bronchitis (disorder)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,7,Cough (finding)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,8,Fever (finding)
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,9,Suspected COVID-19
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,10,COVID-19
+ce6fbb19-19f4-b597-7df8-8bb192f78da8,11,Polyp of colon
 d1ac7006-362b-cc1d-d516-f11d65055473,0,Body mass index 30+ - obesity (finding)
 d1ac7006-362b-cc1d-d516-f11d65055473,1,Miscarriage in first trimester
 d1ac7006-362b-cc1d-d516-f11d65055473,2,Atrial Fibrillation
 d1ac7006-362b-cc1d-d516-f11d65055473,3,Acute bronchitis (disorder)
 d1ac7006-362b-cc1d-d516-f11d65055473,4,Viral sinusitis (disorder)
 d1ac7006-362b-cc1d-d516-f11d65055473,5,Sprain of ankle
-dc6c06d0-a7d8-100f-c08b-46c93700c188,0,Acute viral pharyngitis (disorder)
-f7a3acd9-1c09-59d6-dbaa-079164cbe703,0,Viral sinusitis (disorder)
-f7a3acd9-1c09-59d6-dbaa-079164cbe703,1,Acute bronchitis (disorder)
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,0,Acute viral pharyngitis (disorder)
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,1,Acute bronchitis (disorder)
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,2,Headache (finding)
-fabb7ac2-1c62-3293-f43c-e35fb903c1c7,3,Suspected COVID-19
-ff9f14e4-d241-71fe-a501-2199e39aa79a,0,Acute viral pharyngitis (disorder)
-ff9f14e4-d241-71fe-a501-2199e39aa79a,1,Child attention deficit disorder
-ff9f14e4-d241-71fe-a501-2199e39aa79a,2,Otitis media
-ff9f14e4-d241-71fe-a501-2199e39aa79a,3,Chronic low back pain (finding)
-ff9f14e4-d241-71fe-a501-2199e39aa79a,4,Chronic neck pain (finding)
+d786f8d0-61de-9b30-54d3-9a8eb517da09,0,Tubal pregnancy
+d786f8d0-61de-9b30-54d3-9a8eb517da09,1,Prediabetes
+d786f8d0-61de-9b30-54d3-9a8eb517da09,2,Anemia (disorder)
+d786f8d0-61de-9b30-54d3-9a8eb517da09,3,Viral sinusitis (disorder)
+d786f8d0-61de-9b30-54d3-9a8eb517da09,4,Severe anxiety (panic) (finding
+d786f8d0-61de-9b30-54d3-9a8eb517da09,5,Refugee (person)
+d92df2e8-3c36-b226-ac2f-0318da0327b8,0,Concussion injury of brain
+d92df2e8-3c36-b226-ac2f-0318da0327b8,1,Chronic low back pain (finding)
+d92df2e8-3c36-b226-ac2f-0318da0327b8,2,Fibromyalgia (disorder)
+d92df2e8-3c36-b226-ac2f-0318da0327b8,3,Hypertension
+d92df2e8-3c36-b226-ac2f-0318da0327b8,4,Acute bacterial sinusitis (disorder)
+d92df2e8-3c36-b226-ac2f-0318da0327b8,5,Acute bronchitis (disorder)
+d92df2e8-3c36-b226-ac2f-0318da0327b8,6,Viral sinusitis (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,0,Chronic sinusitis (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,1,Anemia (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,2,Viral sinusitis (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,3,Acute bronchitis (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,4,Acute viral pharyngitis (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,5,Streptococcal sore throat (disorder)
+e4c2980e-ffa5-4570-988e-3eb8e108aad3,6,Stroke
+f49dace4-cb51-d640-468f-044ec67ed318,0,Miscarriage in first trimester
+f49dace4-cb51-d640-468f-044ec67ed318,1,Hyperlipidemia
+f49dace4-cb51-d640-468f-044ec67ed318,2,Acute bronchitis (disorder)
+f49dace4-cb51-d640-468f-044ec67ed318,3,Viral sinusitis (disorder)
+f93c78a3-57b8-4858-cad5-e449f26e3857,0,Streptococcal sore throat (disorder)
+f93c78a3-57b8-4858-cad5-e449f26e3857,1,Fracture of clavicle
+f93c78a3-57b8-4858-cad5-e449f26e3857,2,Acute viral pharyngitis (disorder)
+f93c78a3-57b8-4858-cad5-e449f26e3857,3,Acute bronchitis (disorder)
+f93c78a3-57b8-4858-cad5-e449f26e3857,4,Viral sinusitis (disorder)
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,0,Acute viral pharyngitis (disorder)
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,1,Body mass index 30+ - obesity (finding)
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,2,Prediabetes
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,3,Miscarriage in first trimester
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,4,Chronic intractable migraine without aura
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,5,Chronic pain
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,6,Impacted molars
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,7,Drug overdose
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,8,Hyperlipidemia
+f99e1c5e-40c9-aa06-3e00-f2d944dc3ae0,9,Viral sinusitis (disorder)
+fcca54e8-5abe-cd71-30a0-464f15368bea,0,Viral sinusitis (disorder)
